@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuppetMaster", "PuppetMaster.csproj", "{38CBA165-817D-4B66-B6D1-E4A1D231690B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38CBA165-817D-4B66-B6D1-E4A1D231690B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CBA165-817D-4B66-B6D1-E4A1D231690B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CBA165-817D-4B66-B6D1-E4A1D231690B}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{38CBA165-817D-4B66-B6D1-E4A1D231690B}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{38CBA165-817D-4B66-B6D1-E4A1D231690B}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{38CBA165-817D-4B66-B6D1-E4A1D231690B}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
