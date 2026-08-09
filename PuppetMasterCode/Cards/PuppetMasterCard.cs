@@ -36,15 +36,39 @@ public abstract class PuppetMasterCard(int cost, CardType type, CardRarity rarit
     public override string PortraitPath => $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
     public override string BetaPortraitPath => $"beta/{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
 
-    protected virtual async Task<bool> TryRestring(PlayerChoiceContext choiceContext, Creature? target, decimal amount)
+    protected virtual async Task<int> TryRestring(PlayerChoiceContext choiceContext, Creature? target, RestringVar? restring, bool allowPartial = false)
     {
-        var thread = target?.GetPower<ThreadPower>();
-        if (thread == null || thread.Amount < amount)
+        if (restring == null)
         {
-            return false;
+            return 0;
         }
 
-        await PowerCmd.ModifyAmount(choiceContext, thread, -amount, Owner.Creature, this);
-        return true;
+        return await TryRestring(choiceContext, target, restring.BaseValue, allowPartial);
+    }
+
+    protected virtual async Task<int> TryRestring(PlayerChoiceContext choiceContext, Creature? target, decimal amount, bool allowPartial = false)
+    {
+        return await TryRestring(choiceContext, target, (int)amount, allowPartial);
+    }
+
+    protected virtual async Task<int> TryRestring(PlayerChoiceContext choiceContext, Creature? target, int amount, bool allowPartial = false)
+    {
+        var thread = target?.GetPower<ThreadPower>();
+        if (thread == null)
+        {
+            return 0;
+        }
+
+        // There is no use for restringing a negative amount, so assume that callers were intending to pass a positive value.
+        amount = int.Abs(amount);
+
+        if (!allowPartial && thread.Amount < amount)
+        {
+            return 0;
+        }
+
+        var startingThread = thread.Amount;
+        var leftoverThread = await PowerCmd.ModifyAmount(choiceContext, thread, -amount, Owner.Creature, this);
+        return startingThread - leftoverThread;
     }
 }
