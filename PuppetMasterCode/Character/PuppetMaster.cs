@@ -1,11 +1,11 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils.NodeFactories;
-using PuppetMaster.PuppetMasterCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using PuppetMaster.PuppetMasterCode.Cards.Basic;
+using PuppetMaster.PuppetMasterCode.Extensions;
 
 namespace PuppetMaster.PuppetMasterCode.Character;
 
@@ -21,16 +21,16 @@ public class PuppetMaster : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>()
+        ModelDb.Card<StrikePuppetMaster>(),
+        ModelDb.Card<StrikePuppetMaster>(),
+        ModelDb.Card<StrikePuppetMaster>(),
+        ModelDb.Card<StrikePuppetMaster>(),
+        ModelDb.Card<StrikePuppetMaster>(),
+        ModelDb.Card<DefendPuppetMaster>(),
+        ModelDb.Card<DefendPuppetMaster>(),
+        ModelDb.Card<DefendPuppetMaster>(),
+        ModelDb.Card<DefendPuppetMaster>(),
+        ModelDb.Card<DefendPuppetMaster>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

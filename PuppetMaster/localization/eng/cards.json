@@ -1,3 +1,6 @@
 {
-  
+  "PUPPETMASTER-STRIKE_PUPPET_MASTER.description": "Deal {Damage:diff()} damage.",
+  "PUPPETMASTER-STRIKE_PUPPET_MASTER.title": "Strike",
+  "PUPPETMASTER-DEFEND_PUPPET_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "PUPPETMASTER-DEFEND_PUPPET_MASTER.title": "Defend"
 }
