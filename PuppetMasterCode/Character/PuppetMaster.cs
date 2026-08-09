@@ -3,9 +3,9 @@ using BaseLib.Utils.NodeFactories;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 using PuppetMaster.PuppetMasterCode.Cards.Basic;
 using PuppetMaster.PuppetMasterCode.Extensions;
+using PuppetMaster.PuppetMasterCode.Relics;
 
 namespace PuppetMaster.PuppetMasterCode.Character;
 
@@ -30,12 +30,14 @@ public class PuppetMaster : PlaceholderCharacterModel
         ModelDb.Card<DefendPuppetMaster>(),
         ModelDb.Card<DefendPuppetMaster>(),
         ModelDb.Card<DefendPuppetMaster>(),
-        ModelDb.Card<DefendPuppetMaster>()
+        ModelDb.Card<DefendPuppetMaster>(),
+        ModelDb.Card<StringAlong>(),
+        ModelDb.Card<LooseSpool>(),
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<SpinningWheel>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<PuppetMasterCardPool>();

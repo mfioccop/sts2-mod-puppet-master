@@ -2,5 +2,9 @@
   "PUPPETMASTER-STRIKE_PUPPET_MASTER.description": "Deal {Damage:diff()} damage.",
   "PUPPETMASTER-STRIKE_PUPPET_MASTER.title": "Strike",
   "PUPPETMASTER-DEFEND_PUPPET_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "PUPPETMASTER-DEFEND_PUPPET_MASTER.title": "Defend"
+  "PUPPETMASTER-DEFEND_PUPPET_MASTER.title": "Defend",
+  "PUPPETMASTER-STRING_ALONG.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Enemy loses {StrengthPower:diff()} [gold]Strength[/gold].",
+  "PUPPETMASTER-STRING_ALONG.title": "String Along",
+  "PUPPETMASTER-LOOSE_SPOOL.description": "Spin {ThreadPower:diff()} [gold]Thread[/gold].",
+  "PUPPETMASTER-LOOSE_SPOOL.title": "Loose Spool"
 }

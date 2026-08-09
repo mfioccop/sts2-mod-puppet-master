@@ -1,3 +1,5 @@
 {
-  
+  "PUPPETMASTER-THREAD_POWER.description": "A spool of thread that can be consumed for a multitude of tasks.",
+  "PUPPETMASTER-THREAD_POWER.smartDescription": "{Amount} {Amount:plural:spool|spools} of thread that can be consumed for a multitude of tasks.",
+  "PUPPETMASTER-THREAD_POWER.title": "Thread"
 }
