@@ -1,3 +1,16 @@
 {
-  
+  "PUPPETMASTER-PUPPET_MASTER.aromaPrinciple": "Lore",
+  "PUPPETMASTER-PUPPET_MASTER.banter.alive.endTurnPing": "Co-op hurry up end turn ping message",
+  "PUPPETMASTER-PUPPET_MASTER.banter.dead.endTurnPing": "...",
+  "PUPPETMASTER-PUPPET_MASTER.cardsModifierDescription": "Puppet Master cards will now appear in rewards and shops.",
+  "PUPPETMASTER-PUPPET_MASTER.cardsModifierTitle": "Puppet Master Cards",
+  "PUPPETMASTER-PUPPET_MASTER.description": "Sole performer in an elaborate show.\nPulls the strings of both friend and foe.",
+  "PUPPETMASTER-PUPPET_MASTER.eventDeathPrevention": "Co-op survival line",
+  "PUPPETMASTER-PUPPET_MASTER.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "PUPPETMASTER-PUPPET_MASTER.possessiveAdjective": "his/her/its",
+  "PUPPETMASTER-PUPPET_MASTER.pronounObject": "him/her/it",
+  "PUPPETMASTER-PUPPET_MASTER.pronounPossessive": "his/hers/its",
+  "PUPPETMASTER-PUPPET_MASTER.pronounSubject": "he/she/it",
+  "PUPPETMASTER-PUPPET_MASTER.title": "The Puppet Master",
+  "PUPPETMASTER-PUPPET_MASTER.titleObject": "The Puppet Master"  
 }
