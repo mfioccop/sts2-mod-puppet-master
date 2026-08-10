@@ -1,5 +1,8 @@
 {
   "PUPPETMASTER-THREAD_POWER.description": "A spool of thread that can be consumed for a multitude of tasks.",
   "PUPPETMASTER-THREAD_POWER.smartDescription": "{Amount} {Amount:plural:spool|spools} of thread that can be consumed for a multitude of tasks.",
-  "PUPPETMASTER-THREAD_POWER.title": "Thread"
+  "PUPPETMASTER-THREAD_POWER.title": "Thread",
+  "PUPPETMASTER-NEEDLEWORK_POWER.description": "Whenever you attack an enemy, deal 1 damage for each [gold]Thread[/gold] they have.",
+  "PUPPETMASTER-NEEDLEWORK_POWER.smartDescription": "Whenever you attack an enemy, deal {Amount} damage for each [gold]Thread[/gold] they have.",
+  "PUPPETMASTER-NEEDLEWORK_POWER.title": "Needlework"
 }

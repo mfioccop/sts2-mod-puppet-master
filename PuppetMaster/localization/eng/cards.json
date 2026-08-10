@@ -16,5 +16,7 @@
   "PUPPETMASTER-CLOTHESLINE.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Restring[/gold] {Restring:diff()}: Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
   "PUPPETMASTER-CLOTHESLINE.title": "Clothesline",
   "PUPPETMASTER-UNRAVEL.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Restring[/gold] all: Deals {ExtraDamage:diff()} additional damage for each [gold]Thread[/gold] consumed.",
-  "PUPPETMASTER-UNRAVEL.title": "Unravel"
+  "PUPPETMASTER-UNRAVEL.title": "Unravel",
+  "PUPPETMASTER-NEEDLEWORK.description": "Whenever you attack an enemy, deal {NeedleworkPower:diff()} damage for each [gold]Thread[/gold] they have.",
+  "PUPPETMASTER-NEEDLEWORK.title": "Needlework"
 }
