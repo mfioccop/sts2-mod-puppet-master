@@ -12,5 +12,9 @@
   "PUPPETMASTER-VELVET_VEIL.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {VelvetVeilTemporaryDexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
   "PUPPETMASTER-VELVET_VEIL.title": "Velvet Veil",
   "PUPPETMASTER-TANGLE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold].\n[gold]Restring[/gold] {Restring:diff()}: Apply {ExtraWeak:diff()} [gold]Weak[/gold].",
-  "PUPPETMASTER-TANGLE.title": "Tangle"
+  "PUPPETMASTER-TANGLE.title": "Tangle",
+  "PUPPETMASTER-CLOTHESLINE.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Restring[/gold] {Restring:diff()}: Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "PUPPETMASTER-CLOTHESLINE.title": "Clothesline",
+  "PUPPETMASTER-UNRAVEL.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Restring[/gold] all: Deals {ExtraDamage:diff()} additional damage for each [gold]Thread[/gold] consumed.",
+  "PUPPETMASTER-UNRAVEL.title": "Unravel"
 }

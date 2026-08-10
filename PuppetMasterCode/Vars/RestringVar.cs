@@ -7,7 +7,9 @@ public class RestringVar : DynamicVar
 {
     public const string Key = "Restring";
 
-    public RestringVar(decimal baseValue) : base(Key, baseValue)
+    public bool ConsumeAll => BaseValue <= 0;
+
+    public RestringVar(decimal baseValue = 0) : base(Key, baseValue)
     {
         this.WithTooltip();
     }

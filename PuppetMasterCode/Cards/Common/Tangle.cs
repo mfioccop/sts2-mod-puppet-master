@@ -4,7 +4,6 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
-using PuppetMaster.PuppetMasterCode.Extensions;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Common;
@@ -26,7 +25,7 @@ public class Tangle() : PuppetMasterCard(1, CardType.Skill, CardRarity.Common, T
         }
 
         var weakAmount = DynamicVars.Weak.BaseValue;
-        if (await TryRestring(choiceContext, play.Target, DynamicVars.Restring()) > 0)
+        if (await TryRestring(choiceContext, play.Target) > 0)
         {
             weakAmount += DynamicVars["ExtraWeak"].BaseValue;
         }

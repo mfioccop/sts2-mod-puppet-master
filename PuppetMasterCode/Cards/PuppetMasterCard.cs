@@ -36,6 +36,12 @@ public abstract class PuppetMasterCard(int cost, CardType type, CardRarity rarit
     public override string PortraitPath => $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
     public override string BetaPortraitPath => $"beta/{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
 
+
+    protected virtual async Task<int> TryRestring(PlayerChoiceContext choiceContext, Creature? target, bool allowPartial = false)
+    {
+        return await TryRestring(choiceContext, target, DynamicVars.Restring(), allowPartial);
+    }
+
     protected virtual async Task<int> TryRestring(PlayerChoiceContext choiceContext, Creature? target, RestringVar? restring, bool allowPartial = false)
     {
         if (restring == null)
@@ -59,15 +65,20 @@ public abstract class PuppetMasterCard(int cost, CardType type, CardRarity rarit
             return 0;
         }
 
-        // There is no use for restringing a negative amount, so assume that callers were intending to pass a positive value.
-        amount = int.Abs(amount);
+        var startingThread = thread.Amount;
+
+        if (amount <= 0)
+        {
+            // Consume all thread
+            await PowerCmd.Remove(thread);
+            return startingThread;
+        }
 
         if (!allowPartial && thread.Amount < amount)
         {
             return 0;
         }
 
-        var startingThread = thread.Amount;
         var leftoverThread = await PowerCmd.ModifyAmount(choiceContext, thread, -amount, Owner.Creature, this);
         return startingThread - leftoverThread;
     }

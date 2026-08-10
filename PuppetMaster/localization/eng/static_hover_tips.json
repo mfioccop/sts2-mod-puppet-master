@@ -1,4 +1,4 @@
 {
   "PUPPETMASTER-RESTRING.title": "Restring",
-  "PUPPETMASTER-RESTRING.description": "Consumes [blue]{Restring}[/blue] [gold]Thread[/gold] to activate this effect."
+  "PUPPETMASTER-RESTRING.description": "Consumes [blue]{Restring:cond:>0?Restring|all}[/blue] [gold]Thread[/gold] to activate this effect."
 }
