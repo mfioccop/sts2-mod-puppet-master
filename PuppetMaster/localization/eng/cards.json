@@ -20,5 +20,7 @@
   "PUPPETMASTER-NEEDLEWORK.description": "Whenever you attack an enemy, deal {NeedleworkPower:diff()} damage for each [gold]Thread[/gold] they have.",
   "PUPPETMASTER-NEEDLEWORK.title": "Needlework",
   "PUPPETMASTER-SEVER.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: [gold]Stun[/gold] the enemy.",
-  "PUPPETMASTER-SEVER.title": "Sever"
+  "PUPPETMASTER-SEVER.title": "Sever",
+  "PUPPETMASTER-TWISTED_STRINGS.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Enemy loses {StrengthPower:diff()} [gold]Strength[/gold] and {DexterityPower:diff()} [gold]Dexterity[/gold].",
+  "PUPPETMASTER-TWISTED_STRINGS.title": "Twisted Strings"
 }
