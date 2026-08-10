@@ -8,9 +8,9 @@
   "PUPPETMASTER-OILED_JOINTS_POWER.description": "At the start of your turn, gain 1 [gold]Dexterity[/gold].",
   "PUPPETMASTER-OILED_JOINTS_POWER.smartDescription": "At the start of your turn, gain {Amount} [gold]Dexterity[/gold].",
   "PUPPETMASTER-OILED_JOINTS_POWER.title": "Oiled Joints",
-  "PUPPETMASTER-DECOY_POWER.description": "At the end of your turn, gain 1 [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
-  "PUPPETMASTER-DECOY_POWER.smartDescription": "At the end of your turn, gain {Amount} [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
-  "PUPPETMASTER-DECOY_POWER.title": "Decoy",
+  "PUPPETMASTER-DECOY_PUPPET_POWER.description": "At the end of your turn, the [gold]Puppet[/gold] grants you 1 [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
+  "PUPPETMASTER-DECOY_PUPPET_POWER.smartDescription": "At the end of your turn, the [gold]Puppet[/gold] grants you {Amount} [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
+  "PUPPETMASTER-DECOY_PUPPET_POWER.title": "Decoy Puppet",
   "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.description": "At the end of your turn, the [gold]Puppet[/gold] deals 1 damage to ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.smartDescription": "At the end of your turn, the [gold]Puppet[/gold] deals {Amount} damage to ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.title": "Unstrung Puppet"
