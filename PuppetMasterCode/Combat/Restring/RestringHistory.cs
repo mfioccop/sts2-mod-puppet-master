@@ -12,11 +12,16 @@ public class RestringHistory
 
     private static readonly ConditionalWeakTable<CombatHistory, RestringHistory> Restrings = [];
 
-    private readonly List<CombatHistoryEntry> _entries = [];
+    private readonly List<RestringHistoryEntry> _entries = [];
 
     public event Action? Changed;
 
-    public static IEnumerable<CombatHistoryEntry> Entries(CombatHistory history)
+    public static IEnumerable<RestringHistoryEntry> Entries()
+    {
+        return Entries(CombatManager.Instance.History);
+    }
+
+    public static IEnumerable<RestringHistoryEntry> Entries(CombatHistory history)
     {
         return Restrings.TryGetValue(history, out var restrings) ? restrings._entries : [];
     }
@@ -36,7 +41,7 @@ public class RestringHistory
         Add(combatState, entry);
     }
 
-    private void Add(ICombatState combatState, CombatHistoryEntry entry)
+    private void Add(ICombatState combatState, RestringHistoryEntry entry)
     {
         if (!combatState.IsLiveCombat())
         {

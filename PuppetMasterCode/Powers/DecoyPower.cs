@@ -20,10 +20,7 @@ public class DecoyPower : PuppetMasterPower
             return;
         }
 
-        var restrungThisTurn = RestringHistory.Entries(CombatManager.Instance.History)
-            .OfType<RestringHistoryEntry>()
-            .Any(e => e.HappenedThisTurn(CombatState));
-
+        var restrungThisTurn = RestringHistory.Entries().Any(e => e.HappenedThisTurn(CombatState) && e.Applier == Owner);
         if (restrungThisTurn)
         {
             Flash();
