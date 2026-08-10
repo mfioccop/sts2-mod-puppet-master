@@ -28,5 +28,7 @@
   "PUPPETMASTER-OILED_JOINTS.description": "At the start of your turn, gain {OiledJointsPower:diff()} [gold]Dexterity[/gold].",
   "PUPPETMASTER-OILED_JOINTS.title": "Oiled Joints",
   "PUPPETMASTER-DECOY.description": "At the end of your turn, gain {Block:diff()} [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
-  "PUPPETMASTER-DECOY.title": "Decoy"
+  "PUPPETMASTER-DECOY.title": "Decoy",
+  "PUPPETMASTER-UNSTRUNG_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] deals {Damage:diff()} damage to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-UNSTRUNG_PUPPET.title": "Unstrung Puppet"
 }
