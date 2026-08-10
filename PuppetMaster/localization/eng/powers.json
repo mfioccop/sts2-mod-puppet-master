@@ -4,5 +4,8 @@
   "PUPPETMASTER-THREAD_POWER.title": "Thread",
   "PUPPETMASTER-NEEDLEWORK_POWER.description": "Whenever you attack an enemy, deal 1 damage for each [gold]Thread[/gold] they have.",
   "PUPPETMASTER-NEEDLEWORK_POWER.smartDescription": "Whenever you attack an enemy, deal {Amount} damage for each [gold]Thread[/gold] they have.",
-  "PUPPETMASTER-NEEDLEWORK_POWER.title": "Needlework"
+  "PUPPETMASTER-NEEDLEWORK_POWER.title": "Needlework",
+  "PUPPETMASTER-OILED_JOINTS_POWER.description": "At the start of your turn, gain 1 [gold]Dexterity[/gold].",
+  "PUPPETMASTER-OILED_JOINTS_POWER.smartDescription": "At the start of your turn, gain {Amount} [gold]Dexterity[/gold].",
+  "PUPPETMASTER-OILED_JOINTS_POWER.title": "Oiled Joints"
 }
