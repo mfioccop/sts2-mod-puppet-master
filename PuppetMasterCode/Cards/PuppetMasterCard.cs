@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using PuppetMaster.PuppetMasterCode.Character;
+using PuppetMaster.PuppetMasterCode.Combat.Restring;
 using PuppetMaster.PuppetMasterCode.Extensions;
 using PuppetMaster.PuppetMasterCode.Powers;
 using PuppetMaster.PuppetMasterCode.Vars;
@@ -59,7 +60,12 @@ public abstract class PuppetMasterCard(int cost, CardType type, CardRarity rarit
 
     protected virtual async Task<int> TryRestring(PlayerChoiceContext choiceContext, Creature? target, int amount, bool allowPartial = false)
     {
-        var thread = target?.GetPower<ThreadPower>();
+        if (target == null)
+        {
+            return 0;
+        }
+
+        var thread = target.GetPower<ThreadPower>();
         if (thread == null)
         {
             return 0;
@@ -71,15 +77,20 @@ public abstract class PuppetMasterCard(int cost, CardType type, CardRarity rarit
         {
             // Consume all thread
             await PowerCmd.Remove(thread);
+            RestringHistory.Instance.Restrung(target.CombatState!, Owner.Creature, target, startingThread);
             return startingThread;
         }
 
         if (!allowPartial && thread.Amount < amount)
         {
+            // Don't have enough thread to consume
             return 0;
         }
 
+        // Consume either the desired amount of thread, or up to that amount if allowing partial.
         var leftoverThread = await PowerCmd.ModifyAmount(choiceContext, thread, -amount, Owner.Creature, this);
-        return startingThread - leftoverThread;
+        var restrungAmount = startingThread - leftoverThread;
+        RestringHistory.Instance.Restrung(target.CombatState!, Owner.Creature, target, restrungAmount);
+        return restrungAmount;
     }
 }
