@@ -22,5 +22,7 @@
   "PUPPETMASTER-SEVER.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: [gold]Stun[/gold] the enemy.",
   "PUPPETMASTER-SEVER.title": "Sever",
   "PUPPETMASTER-TWISTED_STRINGS.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Enemy loses {StrengthPower:diff()} [gold]Strength[/gold] and {DexterityPower:diff()} [gold]Dexterity[/gold].",
-  "PUPPETMASTER-TWISTED_STRINGS.title": "Twisted Strings"
+  "PUPPETMASTER-TWISTED_STRINGS.title": "Twisted Strings",
+  "PUPPETMASTER-CURTAIN_CALL.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Restring[/gold] {Restring:diff()}: Gain [gold]Block[/gold] {Repeat:diff()} additional {Repeat:plural:time|times}.",
+  "PUPPETMASTER-CURTAIN_CALL.title": "Curtain Call"
 }
