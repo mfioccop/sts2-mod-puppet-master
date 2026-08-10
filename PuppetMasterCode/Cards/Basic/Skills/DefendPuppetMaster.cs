@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Basic;
+namespace PuppetMaster.PuppetMasterCode.Cards.Basic.Skills;
 
 public class DefendPuppetMaster() : PuppetMasterCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {

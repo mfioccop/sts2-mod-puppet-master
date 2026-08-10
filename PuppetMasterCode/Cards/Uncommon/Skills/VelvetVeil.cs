@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using PuppetMaster.PuppetMasterCode.Powers;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon;
+namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon.Skills;
 
 public class VelvetVeil() : PuppetMasterCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {

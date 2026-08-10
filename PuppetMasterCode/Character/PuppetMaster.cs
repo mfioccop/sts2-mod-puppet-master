@@ -3,7 +3,8 @@ using BaseLib.Utils.NodeFactories;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
-using PuppetMaster.PuppetMasterCode.Cards.Basic;
+using PuppetMaster.PuppetMasterCode.Cards.Basic.Attacks;
+using PuppetMaster.PuppetMasterCode.Cards.Basic.Skills;
 using PuppetMaster.PuppetMasterCode.Extensions;
 using PuppetMaster.PuppetMasterCode.Relics;
 

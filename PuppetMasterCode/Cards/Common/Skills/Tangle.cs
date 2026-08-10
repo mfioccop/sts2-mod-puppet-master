@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using PuppetMaster.PuppetMasterCode.Vars;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Common;
+namespace PuppetMaster.PuppetMasterCode.Cards.Common.Skills;
 
 public class Tangle() : PuppetMasterCard(1, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy)
 {

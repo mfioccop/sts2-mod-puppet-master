@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using PuppetMaster.PuppetMasterCode.Powers;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Basic;
+namespace PuppetMaster.PuppetMasterCode.Cards.Basic.Skills;
 
 public class LooseSpool() : PuppetMasterCard(0, CardType.Skill, CardRarity.Basic, TargetType.AnyEnemy)
 {

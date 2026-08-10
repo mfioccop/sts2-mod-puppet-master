@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using PuppetMaster.PuppetMasterCode.Powers;
 using PuppetMaster.PuppetMasterCode.Vars;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon;
+namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon.Attacks;
 
 public class Unravel() : PuppetMasterCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {

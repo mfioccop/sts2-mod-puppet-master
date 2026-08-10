@@ -5,22 +5,22 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Common;
+namespace PuppetMaster.PuppetMasterCode.Cards.Basic.Attacks;
 
-public class MakeshiftCurtain() : PuppetMasterCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
+public class StrikePuppetMaster() : PuppetMasterCard(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(3, ValueProp.Move).WithUpgrade(3),
+        new DamageVar(6, ValueProp.Move).WithUpgrade(3),
     ];
 
-    public override IEnumerable<CardKeyword> CanonicalKeywords =>
+    protected override HashSet<CardTag> CanonicalTags =>
     [
-        CardKeyword.Retain
+        CardTag.Strike,
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        await CommonActions.CardBlock(this, play);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
     }
 }

@@ -1,4 +1,3 @@
-using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -8,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 using PuppetMaster.PuppetMasterCode.Extensions;
 using PuppetMaster.PuppetMasterCode.Vars;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Basic;
+namespace PuppetMaster.PuppetMasterCode.Cards.Basic.Attacks;
 
 public class StringAlong() : PuppetMasterCard(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 {

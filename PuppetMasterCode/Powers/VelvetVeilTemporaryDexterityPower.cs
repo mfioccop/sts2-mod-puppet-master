@@ -2,7 +2,7 @@ using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Powers;
-using PuppetMaster.PuppetMasterCode.Cards.Uncommon;
+using PuppetMaster.PuppetMasterCode.Cards.Uncommon.Skills;
 
 namespace PuppetMaster.PuppetMasterCode.Powers;
 

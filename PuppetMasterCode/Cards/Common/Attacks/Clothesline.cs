@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using PuppetMaster.PuppetMasterCode.Vars;
 
-namespace PuppetMaster.PuppetMasterCode.Cards.Common;
+namespace PuppetMaster.PuppetMasterCode.Cards.Common.Attacks;
 
 public class Clothesline() : PuppetMasterCard(1, CardType.Attack, CardRarity.Common, TargetType.AllEnemies)
 {
