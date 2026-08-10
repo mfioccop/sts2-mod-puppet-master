@@ -30,5 +30,7 @@
   "PUPPETMASTER-DECOY_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] grants you {DecoyPuppetPower:diff()} [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
   "PUPPETMASTER-DECOY_PUPPET.title": "Decoy Puppet",
   "PUPPETMASTER-UNSTRUNG_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] deals {Damage:diff()} damage to ALL enemies with [gold]Thread[/gold].",
-  "PUPPETMASTER-UNSTRUNG_PUPPET.title": "Unstrung Puppet"
+  "PUPPETMASTER-UNSTRUNG_PUPPET.title": "Unstrung Puppet",
+  "PUPPETMASTER-GHASTLY_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] drains {GhastlyPuppetPower:diff()} HP from ALL enemies with [gold]Thread[/gold] and heals you for the total amount.",
+  "PUPPETMASTER-GHASTLY_PUPPET.title": "Ghastly Puppet"
 }

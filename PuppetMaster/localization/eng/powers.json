@@ -13,5 +13,8 @@
   "PUPPETMASTER-DECOY_PUPPET_POWER.title": "Decoy Puppet",
   "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.description": "At the end of your turn, the [gold]Puppet[/gold] deals 1 damage to ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.smartDescription": "At the end of your turn, the [gold]Puppet[/gold] deals {Amount} damage to ALL enemies with [gold]Thread[/gold].",
-  "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.title": "Unstrung Puppet"
+  "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.title": "Unstrung Puppet",
+  "PUPPETMASTER-GHASTLY_PUPPET_POWER.description": "At the end of your turn, the [gold]Puppet[/gold] drains 1 HP from ALL enemies with [gold]Thread[/gold] and heals you for the total amount.",
+  "PUPPETMASTER-GHASTLY_PUPPET_POWER.smartDescription": "At the end of your turn, the [gold]Puppet[/gold] drains {Amount} HP from ALL enemies with [gold]Thread[/gold] and heals you for the total amount.",
+  "PUPPETMASTER-GHASTLY_PUPPET_POWER.title": "Ghastly Puppet"
 }
