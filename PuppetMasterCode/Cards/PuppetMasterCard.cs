@@ -20,7 +20,7 @@ public abstract class PuppetMasterCard(int cost, CardType type, CardRarity rarit
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        ..CanonicalVars.Any(v => v is PowerVar<ThreadPower> or RestringVar) ? new[] { HoverTipFactory.FromPower<ThreadPower>() } : []
+        ..CanonicalVars.Any(v => v is PowerVar<ThreadPower> or RestringVar) ? new[] { ThreadPower.HoverTip } : []
     ];
 
     //Image size:

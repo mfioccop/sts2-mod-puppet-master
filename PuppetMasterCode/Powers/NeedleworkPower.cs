@@ -2,6 +2,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace PuppetMaster.PuppetMasterCode.Powers;
@@ -10,6 +11,11 @@ public class NeedleworkPower : PuppetMasterPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        ThreadPower.HoverTip,
+    ];
 
     public override async Task AfterAttack(PlayerChoiceContext choiceContext, AttackCommand command)
     {

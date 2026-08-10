@@ -22,7 +22,7 @@ public class SpinningWheel() : PuppetMasterRelic
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromPower<ThreadPower>()
+        ThreadPower.HoverTip,
     ];
 
     private bool HasSpunThisTurn
