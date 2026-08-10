@@ -26,5 +26,7 @@
   "PUPPETMASTER-CURTAIN_CALL.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Restring[/gold] {Restring:diff()}: Gain [gold]Block[/gold] {Repeat:diff()} additional {Repeat:plural:time|times}.",
   "PUPPETMASTER-CURTAIN_CALL.title": "Curtain Call",
   "PUPPETMASTER-OILED_JOINTS.description": "At the start of your turn, gain {OiledJointsPower:diff()} [gold]Dexterity[/gold].",
-  "PUPPETMASTER-OILED_JOINTS.title": "Oiled Joints"
+  "PUPPETMASTER-OILED_JOINTS.title": "Oiled Joints",
+  "PUPPETMASTER-DECOY.description": "At the end of your turn, gain {Block:diff()} [gold]Block[/gold] if you [gold]Restrung Thread[/gold] this turn.",
+  "PUPPETMASTER-DECOY.title": "Decoy"
 }
