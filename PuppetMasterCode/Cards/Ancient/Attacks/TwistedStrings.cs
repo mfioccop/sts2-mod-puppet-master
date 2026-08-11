@@ -1,3 +1,4 @@
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -9,12 +10,12 @@ using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Ancient.Attacks;
 
-public class TwistedStrings() : PuppetMasterCard(1, CardType.Attack, CardRarity.Ancient, TargetType.AnyEnemy)
+public class TwistedStrings() : PuppetMasterCard(0, CardType.Attack, CardRarity.Ancient, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(7, ValueProp.Move),
-        new RestringVar(2),
+        new DamageVar(9, ValueProp.Move),
+        new RestringVar(2).WithUpgrade(-1),
         new PowerVar<StrengthPower>(1),
         new PowerVar<DexterityPower>(1),
     ];
@@ -40,10 +41,5 @@ public class TwistedStrings() : PuppetMasterCard(1, CardType.Attack, CardRarity.
             await CommonActions.Apply<StrengthPower>(choiceContext, play.Target, this, -DynamicVars.Strength.BaseValue);
             await CommonActions.Apply<DexterityPower>(choiceContext, play.Target, this, -DynamicVars.Dexterity.BaseValue);
         }
-    }
-
-    protected override void OnUpgrade()
-    {
-        EnergyCost.UpgradeBy(-1);
     }
 }

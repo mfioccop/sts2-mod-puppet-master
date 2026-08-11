@@ -1,4 +1,5 @@
 using BaseLib.Abstracts;
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -12,12 +13,12 @@ using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Basic.Attacks;
 
-public class StringAlong() : PuppetMasterCard(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy), ITranscendenceCard
+public class StringAlong() : PuppetMasterCard(0, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy), ITranscendenceCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new DamageVar(3, ValueProp.Move),
-        new RestringVar(3),
+        new RestringVar(3).WithUpgrade(-1),
         new PowerVar<StrengthPower>(1),
     ];
 
@@ -40,11 +41,6 @@ public class StringAlong() : PuppetMasterCard(1, CardType.Attack, CardRarity.Bas
         {
             await CommonActions.Apply<StrengthPower>(choiceContext, play.Target, this, -DynamicVars.Strength.BaseValue);
         }
-    }
-
-    protected override void OnUpgrade()
-    {
-        EnergyCost.UpgradeBy(-1);
     }
 
     public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<TwistedStrings>();
