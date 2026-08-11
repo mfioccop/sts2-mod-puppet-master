@@ -32,5 +32,9 @@
   "PUPPETMASTER-UNSTRUNG_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] deals {Damage:diff()} damage to ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-UNSTRUNG_PUPPET.title": "Unstrung Puppet",
   "PUPPETMASTER-GHASTLY_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] drains {GhastlyPuppetPower:diff()} HP from ALL enemies with [gold]Thread[/gold] and heals you for the total amount.",
-  "PUPPETMASTER-GHASTLY_PUPPET.title": "Ghastly Puppet"
+  "PUPPETMASTER-GHASTLY_PUPPET.title": "Ghastly Puppet",
+  "PUPPETMASTER-PUNCH_HOLE.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Deal {UnblockableDamage:diff()} unblockable damage.",
+  "PUPPETMASTER-PUNCH_HOLE.title": "Punch Hole",
+  "PUPPETMASTER-THREADING_STRIKE.description": "Deal {Damage:diff()} damage.\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
+  "PUPPETMASTER-THREADING_STRIKE.title": "Threading Strike"
 }
