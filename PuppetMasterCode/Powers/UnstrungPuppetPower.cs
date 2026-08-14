@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace PuppetMaster.PuppetMasterCode.Powers;
 
-public class UnstrungPuppetPower : PuppetMasterPower
+public class UnstrungPuppetPower : PuppetPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
