@@ -36,5 +36,7 @@
   "PUPPETMASTER-PUNCH_HOLE.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Deal {UnblockableDamage:diff()} unblockable damage.",
   "PUPPETMASTER-PUNCH_HOLE.title": "Punch Hole",
   "PUPPETMASTER-THREADING_STRIKE.description": "Deal {Damage:diff()} damage.\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
-  "PUPPETMASTER-THREADING_STRIKE.title": "Threading Strike"
+  "PUPPETMASTER-THREADING_STRIKE.title": "Threading Strike",
+  "PUPPETMASTER-PUPPETEER_STRIKE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage if you have a [gold]Puppet[/gold].",
+  "PUPPETMASTER-PUPPETEER_STRIKE.title": "Puppeteer Strike"
 }
