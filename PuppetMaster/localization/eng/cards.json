@@ -38,5 +38,7 @@
   "PUPPETMASTER-THREADING_STRIKE.description": "Deal {Damage:diff()} damage.\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
   "PUPPETMASTER-THREADING_STRIKE.title": "Threading Strike",
   "PUPPETMASTER-PUPPETEER_STRIKE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage if you have a [gold]Puppet[/gold].",
-  "PUPPETMASTER-PUPPETEER_STRIKE.title": "Puppeteer Strike"
+  "PUPPETMASTER-PUPPETEER_STRIKE.title": "Puppeteer Strike",
+  "PUPPETMASTER-CHOREOGRAPH.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you have a [gold]Puppet[/gold], hits {Repeat:diff()} additional {Repeat:plural:time|times}.",
+  "PUPPETMASTER-CHOREOGRAPH.title": "Choreograph"
 }
