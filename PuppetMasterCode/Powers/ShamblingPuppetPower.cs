@@ -13,6 +13,14 @@ public class ShamblingPuppetPower : PuppetPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
+    public override async Task Perform(PlayerChoiceContext choiceContext)
+    {
+        Flash();
+        await Cmd.CustomScaledWait(0.2f, 0.4f);
+        var targets = CombatState.HittableEnemies.Where(c => c.HasPower<ThreadPower>());
+        await PowerCmd.Apply<WeakPower>(choiceContext, targets, Amount, Owner, null);
+    }
+
     public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (!participants.Contains(Owner))
@@ -20,10 +28,7 @@ public class ShamblingPuppetPower : PuppetPower
             return;
         }
 
-        Flash();
-        await Cmd.CustomScaledWait(0.2f, 0.4f);
-        var targets = CombatState.HittableEnemies.Where(c => c.HasPower<ThreadPower>());
-        await PowerCmd.Apply<WeakPower>(choiceContext, targets, Amount, Owner, null);
+        await Perform(choiceContext);
         await PowerCmd.Remove(this);
     }
 }

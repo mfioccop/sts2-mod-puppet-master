@@ -14,6 +14,16 @@ public class DecoyPuppetPower : PuppetPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
+    public override async Task Perform(PlayerChoiceContext choiceContext)
+    {
+        var restrungThisTurn = RestringHistory.Entries().Any(e => e.HappenedThisTurn(CombatState) && e.Applier == Owner);
+        if (restrungThisTurn)
+        {
+            Flash();
+            await CreatureCmd.GainBlock(Owner, Amount, ValueProp.Unpowered, null);
+        }
+    }
+
     public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (!participants.Contains(Owner))
@@ -21,13 +31,7 @@ public class DecoyPuppetPower : PuppetPower
             return;
         }
 
-        var restrungThisTurn = RestringHistory.Entries().Any(e => e.HappenedThisTurn(CombatState) && e.Applier == Owner);
-        if (restrungThisTurn)
-        {
-            Flash();
-            await CreatureCmd.GainBlock(Owner, Amount, ValueProp.Unpowered, null);
-        }
-
+        await Perform(choiceContext);
         await PowerCmd.Remove(this);
     }
 }

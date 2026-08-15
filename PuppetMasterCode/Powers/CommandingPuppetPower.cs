@@ -12,6 +12,15 @@ public class CommandingPuppetPower : PuppetPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
+    public override async Task Perform(PlayerChoiceContext choiceContext)
+    {
+        Flash();
+        await Cmd.CustomScaledWait(0.2f, 0.4f);
+        await PowerCmd.Apply<CommandingPuppetTemporaryStrengthPower>(choiceContext, Owner, Amount, Owner, null);
+        var targets = CombatState.HittableEnemies.Where(c => c.HasPower<ThreadPower>());
+        await PowerCmd.Apply<CommandingPuppetTemporaryStrengthPower>(choiceContext, targets, -Amount, Owner, null);
+    }
+
     public override async Task BeforeSideTurnStart(PlayerChoiceContext choiceContext, CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
         if (!participants.Contains(Owner))
@@ -19,11 +28,7 @@ public class CommandingPuppetPower : PuppetPower
             return;
         }
 
-        Flash();
-        await Cmd.CustomScaledWait(0.2f, 0.4f);
-        await PowerCmd.Apply<CommandingPuppetTemporaryStrengthPower>(choiceContext, Owner, Amount, Owner, null);
-        var targets = CombatState.HittableEnemies.Where(c => c.HasPower<ThreadPower>());
-        await PowerCmd.Apply<CommandingPuppetTemporaryStrengthPower>(choiceContext, targets, -Amount, Owner, null);
+        await Perform(choiceContext);
         await PowerCmd.Remove(this);
     }
 }

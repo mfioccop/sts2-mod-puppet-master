@@ -13,6 +13,16 @@ public class GhastlyPuppetPower : PuppetPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
+    public override async Task Perform(PlayerChoiceContext choiceContext)
+    {
+        Flash();
+        await Cmd.CustomScaledWait(0.2f, 0.4f);
+        var targets = CombatState.HittableEnemies.Where(c => c.HasPower<ThreadPower>());
+        var results = await CreatureCmd.Damage(choiceContext, targets, Amount, ValueProp.Unpowered | ValueProp.Unblockable, Owner);
+        var hpDrain = results.Sum(r => r.TotalDamage);
+        await CreatureCmd.Heal(Owner, hpDrain);
+    }
+
     public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (!participants.Contains(Owner))
@@ -20,12 +30,7 @@ public class GhastlyPuppetPower : PuppetPower
             return;
         }
 
-        Flash();
-        await Cmd.CustomScaledWait(0.2f, 0.4f);
-        var targets = CombatState.HittableEnemies.Where(c => c.HasPower<ThreadPower>());
-        var results = await CreatureCmd.Damage(choiceContext, targets, Amount, ValueProp.Unpowered | ValueProp.Unblockable, Owner);
-        var hpDrain = results.Sum(r => r.TotalDamage);
-        await CreatureCmd.Heal(Owner, hpDrain);
+        await Perform(choiceContext);
         await PowerCmd.Remove(this);
     }
 }
