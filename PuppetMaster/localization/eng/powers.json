@@ -16,5 +16,11 @@
   "PUPPETMASTER-UNSTRUNG_PUPPET_POWER.title": "Unstrung Puppet",
   "PUPPETMASTER-GHASTLY_PUPPET_POWER.description": "At the end of your turn, the [gold]Puppet[/gold] drains 1 HP from ALL enemies with [gold]Thread[/gold] and heals you for the total amount.",
   "PUPPETMASTER-GHASTLY_PUPPET_POWER.smartDescription": "At the end of your turn, the [gold]Puppet[/gold] drains {Amount} HP from ALL enemies with [gold]Thread[/gold] and heals you for the total amount.",
-  "PUPPETMASTER-GHASTLY_PUPPET_POWER.title": "Ghastly Puppet"
+  "PUPPETMASTER-GHASTLY_PUPPET_POWER.title": "Ghastly Puppet",
+  "PUPPETMASTER-SHAMBLING_PUPPET_POWER.description": "At the end of your turn, apply 1} [gold]Weak[/gold] to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-SHAMBLING_PUPPET_POWER.smartDescription": "At the end of your turn, apply {Amount} [gold]Weak[/gold] to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-SHAMBLING_PUPPET_POWER.title": "Shambling Puppet",
+  "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.description": "At the end of your turn, deal 1 damage and apply 1 [gold]Vulnerable[/gold] to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.smartDescription": "At the end of your turn, deal {Amount} damage and apply {Amount} [gold]Vulnerable[/gold] to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.title": "Nightmare Puppet"
 }

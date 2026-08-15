@@ -40,5 +40,12 @@
   "PUPPETMASTER-PUPPETEER_STRIKE.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage if you have a [gold]Puppet[/gold].",
   "PUPPETMASTER-PUPPETEER_STRIKE.title": "Puppeteer Strike",
   "PUPPETMASTER-CHOREOGRAPH.description": "Deal {Damage:diff()} damage to ALL enemies.\nIf you have a [gold]Puppet[/gold], hits {Repeat:diff()} additional {Repeat:plural:time|times}.",
-  "PUPPETMASTER-CHOREOGRAPH.title": "Choreograph"
+  "PUPPETMASTER-CHOREOGRAPH.title": "Choreograph",
+  "PUPPETMASTER-SCAVENGE_MATERIALS.description": "Deal {Damage:diff()} damage.\nChoose 1 of 3 random [gold]Puppets[/gold]. It's free to play this turn.",
+  "PUPPETMASTER-SCAVENGE_MATERIALS.selectionScreenPrompt": "Select a card to put in your Hand.",
+  "PUPPETMASTER-SCAVENGE_MATERIALS.title": "Scavenge Materials",
+  "PUPPETMASTER-SHAMBLING_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] applies {ShamblingPuppetPower:diff()} [gold]Weak[/gold] to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-SHAMBLING_PUPPET.title": "Shambling Puppet",
+  "PUPPETMASTER-NIGHTMARE_PUPPET.description": "At the end of your turn, the [gold]Puppet[/gold] deals {NightmarePuppetPower:diff()} damage and applies {NightmarePuppetPower:diff()} [gold]Vulnerable[/gold] to ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-NIGHTMARE_PUPPET.title": "Nightmare Puppet"
 }
