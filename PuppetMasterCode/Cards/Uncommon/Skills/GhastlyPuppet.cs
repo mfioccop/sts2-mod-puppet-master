@@ -6,7 +6,7 @@ using PuppetMaster.PuppetMasterCode.Powers;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon.Skills;
 
-public class GhastlyPuppet() : PuppetMasterCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public class GhastlyPuppet() : PuppetCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [

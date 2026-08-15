@@ -8,7 +8,7 @@ using PuppetMaster.PuppetMasterCode.Powers;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Common.Skills;
 
-public class UnstrungPuppet() : PuppetMasterCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+public class UnstrungPuppet() : PuppetCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
