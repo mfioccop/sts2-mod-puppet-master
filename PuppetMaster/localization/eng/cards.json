@@ -51,5 +51,7 @@
   "PUPPETMASTER-COMMANDING_PUPPET.description": "Next turn, the [gold]Puppet[/gold] grants you {CommandingPuppetPower:diff()} [gold]Strength[/gold] and drains {CommandingPuppetPower:diff()} [gold]Strength[/gold] from ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-COMMANDING_PUPPET.title": "Commanding Puppet",
   "PUPPETMASTER-NESTING_PUPPETS.description": "At the end of your turn, the [gold]Puppet[/gold] deals {NestingPuppetsPower:diff()} damage to ALL enemies.\nReduce this card's cost by 1.",
-  "PUPPETMASTER-NESTING_PUPPETS.title": "Nesting Puppets"
+  "PUPPETMASTER-NESTING_PUPPETS.title": "Nesting Puppets",
+  "PUPPETMASTER-REHEARSAL.description": "Deal {Damage:diff()} damage.\nA random [gold]Puppet[/gold] [gold]Performs[/gold].",
+  "PUPPETMASTER-REHEARSAL.title": "Rehearsal"
 }
