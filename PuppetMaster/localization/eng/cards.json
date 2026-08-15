@@ -53,5 +53,7 @@
   "PUPPETMASTER-NESTING_PUPPETS.description": "Reduce this card's cost by 1.\nAt the end of your turn, the [gold]Puppet Performs[/gold]: deal {NestingPuppetsPower:diff()} damage to ALL enemies.",
   "PUPPETMASTER-NESTING_PUPPETS.title": "Nesting Puppets",
   "PUPPETMASTER-REHEARSAL.description": "Deal {Damage:diff()} damage.\nA random [gold]Puppet Performs[/gold].",
-  "PUPPETMASTER-REHEARSAL.title": "Rehearsal"
+  "PUPPETMASTER-REHEARSAL.title": "Rehearsal",
+  "PUPPETMASTER-ENCORE.description": "Your [gold]Puppets[/gold] last {EncorePower:diff()} additional {EncorePower:plural:turn|turns}.",
+  "PUPPETMASTER-ENCORE.title": "Encore"
 }

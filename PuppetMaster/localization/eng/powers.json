@@ -28,5 +28,8 @@
   "PUPPETMASTER-COMMANDING_PUPPET_POWER.title": "Commanding Puppet",
   "PUPPETMASTER-NESTING_PUPPETS_POWER.description": "At the end of your turn, the [gold]Puppet Performs[/gold]: deal 1 damage to ALL enemies.",
   "PUPPETMASTER-NESTING_PUPPETS_POWER.smartDescription": "At the end of your turn, the [gold]Puppet Performs[/gold]: deal {Amount} damage to ALL enemies.",
-  "PUPPETMASTER-NESTING_PUPPETS_POWER.title": "Nesting Puppets"
+  "PUPPETMASTER-NESTING_PUPPETS_POWER.title": "Nesting Puppets",
+  "PUPPETMASTER-ENCORE_POWER.description": "Your [gold]Puppets[/gold] last 1 additional turn.",
+  "PUPPETMASTER-ENCORE_POWER.smartDescription": "Your [gold]Puppets[/gold] last {Amount} additional {Amount:plural:turn|turns}.",
+  "PUPPETMASTER-ENCORE_POWER.title": "Encore"
 }
