@@ -25,5 +25,8 @@
   "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.title": "Nightmare Puppet",
   "PUPPETMASTER-COMMANDING_PUPPET_POWER.description": "Next turn, the [gold]Puppet[/gold] grants you 1 [gold]Strength[/gold] and drains 1 [gold]Strength[/gold] from ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-COMMANDING_PUPPET_POWER.smartDescription": "Next turn, the [gold]Puppet[/gold] grants you {Amount} [gold]Strength[/gold] and drains {Amount} [gold]Strength[/gold] from ALL enemies with [gold]Thread[/gold].",
-  "PUPPETMASTER-COMMANDING_PUPPET_POWER.title": "Commanding Puppet"
+  "PUPPETMASTER-COMMANDING_PUPPET_POWER.title": "Commanding Puppet",
+  "PUPPETMASTER-NESTING_PUPPETS_POWER.description": "At the end of your turn, the [gold]Puppet[/gold] deals 1 damage to ALL enemies.",
+  "PUPPETMASTER-NESTING_PUPPETS_POWER.smartDescription": "At the end of your turn, the [gold]Puppet[/gold] deals {Amount} damage to ALL enemies.",
+  "PUPPETMASTER-NESTING_PUPPETS_POWER.title": "Nesting Puppets"
 }
