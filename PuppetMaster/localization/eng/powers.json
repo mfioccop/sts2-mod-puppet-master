@@ -22,5 +22,8 @@
   "PUPPETMASTER-SHAMBLING_PUPPET_POWER.title": "Shambling Puppet",
   "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.description": "At the end of your turn, deal 1 damage and apply 1 [gold]Vulnerable[/gold] to ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.smartDescription": "At the end of your turn, deal {Amount} damage and apply {Amount} [gold]Vulnerable[/gold] to ALL enemies with [gold]Thread[/gold].",
-  "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.title": "Nightmare Puppet"
+  "PUPPETMASTER-NIGHTMARE_PUPPET_POWER.title": "Nightmare Puppet",
+  "PUPPETMASTER-COMMANDING_PUPPET_POWER.description": "Next turn, the [gold]Puppet[/gold] grants you 1 [gold]Strength[/gold] and drains 1 [gold]Strength[/gold] from ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-COMMANDING_PUPPET_POWER.smartDescription": "Next turn, the [gold]Puppet[/gold] grants you {Amount} [gold]Strength[/gold] and drains {Amount} [gold]Strength[/gold] from ALL enemies with [gold]Thread[/gold].",
+  "PUPPETMASTER-COMMANDING_PUPPET_POWER.title": "Commanding Puppet"
 }
