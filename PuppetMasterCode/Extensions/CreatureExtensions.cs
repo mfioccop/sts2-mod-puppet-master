@@ -7,7 +7,7 @@ public static class CreatureExtensions
 {
     public static IEnumerable<PuppetPower> Puppets(this Creature creature)
     {
-        return (IEnumerable<PuppetPower>)creature.Powers.Where(p => p is PuppetPower);
+        return creature.Powers.OfType<PuppetPower>();
     }
 
     public static bool HasPuppet(this Creature creature)
