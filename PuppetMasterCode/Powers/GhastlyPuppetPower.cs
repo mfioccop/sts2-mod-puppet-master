@@ -31,6 +31,6 @@ public class GhastlyPuppetPower : PuppetPower
         }
 
         await Perform(choiceContext);
-        await PowerCmd.Remove(this);
+        await RemovePuppet();
     }
 }

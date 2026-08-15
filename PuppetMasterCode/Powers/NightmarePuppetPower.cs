@@ -31,6 +31,6 @@ public class NightmarePuppetPower : PuppetPower
         }
 
         await Perform(choiceContext);
-        await PowerCmd.Remove(this);
+        await RemovePuppet();
     }
 }
