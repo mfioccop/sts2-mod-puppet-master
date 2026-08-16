@@ -4,5 +4,8 @@
   "PUPPETMASTER-SPINNING_WHEEL.title": "Spinning Wheel",
   "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.description": "Whenever your [gold]Puppets Perform[/gold], they do so an additional time.",
   "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.flavor": "Still learning its lines, but has the moves down.",
-  "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.title": "Clockwork Understudy"
+  "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.title": "Clockwork Understudy",
+  "PUPPETMASTER-BOX_OF_SCRAPS.description": "Every [blue]5th[/blue] [gold]Puppet[/gold] you play is free.",
+  "PUPPETMASTER-BOX_OF_SCRAPS.flavor": "Holds everything you need to make a puppet. As long as you fill it first.",
+  "PUPPETMASTER-BOX_OF_SCRAPS.title": "Box of Scraps"
 }
