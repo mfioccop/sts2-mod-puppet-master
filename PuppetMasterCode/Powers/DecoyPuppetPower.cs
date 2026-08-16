@@ -14,7 +14,7 @@ public class DecoyPuppetPower : PuppetPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
-    public override async Task Perform(PlayerChoiceContext choiceContext)
+    protected override async Task DoPerform(PlayerChoiceContext choiceContext)
     {
         var restrungThisTurn = RestringHistory.Entries().Any(e => e.HappenedThisTurn(CombatState) && e.Applier == Owner);
         if (restrungThisTurn)

@@ -13,7 +13,7 @@ public class UnstrungPuppetPower : PuppetPower
     public override PowerStackType StackType => PowerStackType.Counter;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
-    public override async Task Perform(PlayerChoiceContext choiceContext)
+    protected override async Task DoPerform(PlayerChoiceContext choiceContext)
     {
         Flash();
         await Cmd.CustomScaledWait(0.2f, 0.4f);

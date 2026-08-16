@@ -1,8 +1,10 @@
 using BaseLib.Abstracts;
+using BaseLib.Extensions;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
+using PuppetMaster.PuppetMasterCode.Relics;
 
 namespace PuppetMaster.PuppetMasterCode.Powers;
 
@@ -23,7 +25,7 @@ public abstract class PuppetPower : PuppetMasterPower, IHasSecondAmount
     }
 
     public string GetSecondAmount() => (TurnsLeft + 1).ToString();
-    public abstract Task Perform(PlayerChoiceContext choiceContext);
+    protected abstract Task DoPerform(PlayerChoiceContext choiceContext);
 
     public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
     {
@@ -31,6 +33,16 @@ public abstract class PuppetPower : PuppetMasterPower, IHasSecondAmount
         if (encore > 0)
         {
             AddExtraTurns(encore);
+        }
+    }
+
+    public async Task Perform(PlayerChoiceContext choiceContext)
+    {
+        await DoPerform(choiceContext);
+        if (Owner.Player?.TryGetRelic<ClockworkUnderstudy>(out var relic) ?? false)
+        {
+            relic.Flash();
+            await DoPerform(choiceContext);
         }
     }
 

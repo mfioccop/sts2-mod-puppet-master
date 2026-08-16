@@ -14,7 +14,7 @@ public class NestingPuppetsPower : PuppetPower
 
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
-    public override async Task Perform(PlayerChoiceContext choiceContext)
+    protected override async Task DoPerform(PlayerChoiceContext choiceContext)
     {
         Flash();
         await Cmd.CustomScaledWait(0.2f, 0.4f);
