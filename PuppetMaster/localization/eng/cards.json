@@ -61,5 +61,11 @@
   "PUPPETMASTER-BREAK_A_LEG.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
   "PUPPETMASTER-BREAK_A_LEG.title": "Break a Leg",
   "PUPPETMASTER-EMBELLISH.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Gain {Block:diff()} [gold]Block[/gold].",
-  "PUPPETMASTER-EMBELLISH.title": "Embellish"
+  "PUPPETMASTER-EMBELLISH.title": "Embellish",
+  "PUPPETMASTER-CAST_NET.description": "Deal {Damage:diff()} damage and apply {ThreadPower:diff()} [gold]Thread[/gold] to ALL enemies.",
+  "PUPPETMASTER-CAST_NET.title": "Cast Net",
+  "PUPPETMASTER-RESUPPLY.description": "Gain {Energy:energyIcons()}.\n[gold]Restring[/gold] {Restring:diff()}: Gain {ExtraEnergy:energyIcons()}.",
+  "PUPPETMASTER-RESUPPLY.title": "Resupply",
+  "PUPPETMASTER-MAESTRO_FORM.description": "At the start of your turn, play {MaestroFormPower:diff()} random [gold]Upgraded {MaestroFormPower:plural:Puppet|Puppets}[/gold] and [gold]Exhaust[/gold] {MaestroFormPower:plural:it|them}.",
+  "PUPPETMASTER-MAESTRO_FORM.title": "Maestro Form"
 }

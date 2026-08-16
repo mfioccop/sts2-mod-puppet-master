@@ -31,5 +31,8 @@
   "PUPPETMASTER-NESTING_PUPPETS_POWER.title": "Nesting Puppets",
   "PUPPETMASTER-ENCORE_POWER.description": "Your [gold]Puppets[/gold] last 1 additional turn.",
   "PUPPETMASTER-ENCORE_POWER.smartDescription": "Your [gold]Puppets[/gold] last {Amount} additional {Amount:plural:turn|turns}.",
-  "PUPPETMASTER-ENCORE_POWER.title": "Encore"
+  "PUPPETMASTER-ENCORE_POWER.title": "Encore",
+  "PUPPETMASTER-MAESTRO_FORM_POWER.description": "At the start of your turn, play 1 random [gold]Upgraded Puppet[/gold] and [gold]Exhaust[/gold] it.",
+  "PUPPETMASTER-MAESTRO_FORM_POWER.smartDescription": "At the start of your turn, play {Amount} random [gold]Upgraded {Amount:plural:Puppet|Puppets}[/gold] and [gold]Exhaust[/gold] {Amount:plural:it|them}.",
+  "PUPPETMASTER-MAESTRO_FORM_POWER.title": "Maestro Form"
 }
