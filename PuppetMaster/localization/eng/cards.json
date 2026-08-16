@@ -67,5 +67,7 @@
   "PUPPETMASTER-RESUPPLY.description": "Gain {Energy:energyIcons()}.\n[gold]Restring[/gold] {Restring:diff()}: Gain {ExtraEnergy:energyIcons()}.",
   "PUPPETMASTER-RESUPPLY.title": "Resupply",
   "PUPPETMASTER-MAESTRO_FORM.description": "At the start of your turn, play {MaestroFormPower:diff()} random [gold]Upgraded {MaestroFormPower:plural:Puppet|Puppets}[/gold] and [gold]Exhaust[/gold] {MaestroFormPower:plural:it|them}.",
-  "PUPPETMASTER-MAESTRO_FORM.title": "Maestro Form"
+  "PUPPETMASTER-MAESTRO_FORM.title": "Maestro Form",
+  "PUPPETMASTER-LEFTOVERS.description": "Apply {Thread:diff()} [gold]Thread[/gold].\nApplies {ThreadExtra:diff()} additional [gold]Thread[/gold] for each [gold]Puppet[/gold] you have.",
+  "PUPPETMASTER-LEFTOVERS.title": "Leftovers"
 }
