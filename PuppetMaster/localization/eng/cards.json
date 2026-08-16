@@ -78,5 +78,7 @@
   "PUPPETMASTER-SCRAP_WALL.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGains {CalculationExtra:diff()} additional [gold]Block[/gold] for ALL your [gold]Puppet[/gold] cards.",
   "PUPPETMASTER-SCRAP_WALL.title": "Scrap Wall",
   "PUPPETMASTER-TAKE_A_BOW.description": "Whenever your [gold]Puppets Perform[/gold], gain {TakeABowPower:diff()} [gold]Block[/gold].",
-  "PUPPETMASTER-TAKE_A_BOW.title": "Take a Bow"
+  "PUPPETMASTER-TAKE_A_BOW.title": "Take a Bow",
+  "PUPPETMASTER-TEMPLATES.description": "At the start of your turn, draw {TemplatesPower:diff()} {TemplatesPower:plural:card|cards} if any enemy has [gold]Thread[/gold].",
+  "PUPPETMASTER-TEMPLATES.title": "Templates"
 }
