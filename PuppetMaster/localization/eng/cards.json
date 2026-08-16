@@ -69,5 +69,8 @@
   "PUPPETMASTER-MAESTRO_FORM.description": "At the start of your turn, play {MaestroFormPower:diff()} random [gold]Upgraded {MaestroFormPower:plural:Puppet|Puppets}[/gold] and [gold]Exhaust[/gold] {MaestroFormPower:plural:it|them}.",
   "PUPPETMASTER-MAESTRO_FORM.title": "Maestro Form",
   "PUPPETMASTER-LEFTOVERS.description": "Apply {Thread:diff()} [gold]Thread[/gold].\nApplies {ThreadExtra:diff()} additional [gold]Thread[/gold] for each [gold]Puppet[/gold] you have.",
-  "PUPPETMASTER-LEFTOVERS.title": "Leftovers"
+  "PUPPETMASTER-LEFTOVERS.title": "Leftovers",
+  "PUPPETMASTER-FINAL_TOUCHES.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Restring[/gold] {Restring:diff()}: Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+  "PUPPETMASTER-FINAL_TOUCHES.selectionScreenPrompt": "Choose a card to put back in your Hand.",
+  "PUPPETMASTER-FINAL_TOUCHES.title": "Final Touches"
 }
