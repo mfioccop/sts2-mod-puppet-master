@@ -76,5 +76,7 @@
   "PUPPETMASTER-WHITTLE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
   "PUPPETMASTER-WHITTLE.title": "Whittle",
   "PUPPETMASTER-SCRAP_WALL.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGains {CalculationExtra:diff()} additional [gold]Block[/gold] for ALL your [gold]Puppet[/gold] cards.",
-  "PUPPETMASTER-SCRAP_WALL.title": "Scrap Wall"
+  "PUPPETMASTER-SCRAP_WALL.title": "Scrap Wall",
+  "PUPPETMASTER-TAKE_A_BOW.description": "Whenever your [gold]Puppets Perform[/gold], gain {TakeABowPower:diff()} [gold]Block[/gold].",
+  "PUPPETMASTER-TAKE_A_BOW.title": "Take a Bow"
 }

@@ -37,5 +37,8 @@
   "PUPPETMASTER-MAESTRO_FORM_POWER.title": "Maestro Form",
   "PUPPETMASTER-FREE_PUPPET_POWER.description": "The next [gold]Puppet[/gold] you play costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
   "PUPPETMASTER-FREE_PUPPET_POWER.smartDescription": "The next {Amount} [gold]{Amount:plural:Puppet|Puppets}[/gold] you play {Amount:plural:costs|cost} [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
-  "PUPPETMASTER-FREE_PUPPET_POWER.title": "Free Puppet"
+  "PUPPETMASTER-FREE_PUPPET_POWER.title": "Free Puppet",
+  "PUPPETMASTER-TAKE_A_BOW_POWER.description": "Whenever your [gold]Puppets Perform[/gold], gain [blue]1[blue] [gold]Block[/gold].",
+  "PUPPETMASTER-TAKE_A_BOW_POWER.smartDescription": "Whenever your [gold]Puppets Perform[/gold], gain {Amount} [gold]Block[/gold].",
+  "PUPPETMASTER-TAKE_A_BOW_POWER.title": "Take a Bow"
 }
