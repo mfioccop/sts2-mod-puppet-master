@@ -55,5 +55,7 @@
   "PUPPETMASTER-REHEARSAL.description": "Deal {Damage:diff()} damage.\nA random [gold]Puppet Performs[/gold].",
   "PUPPETMASTER-REHEARSAL.title": "Rehearsal",
   "PUPPETMASTER-ENCORE.description": "Your [gold]Puppets[/gold] last {EncorePower:diff()} additional {EncorePower:plural:turn|turns}.",
-  "PUPPETMASTER-ENCORE.title": "Encore"
+  "PUPPETMASTER-ENCORE.title": "Encore",
+  "PUPPETMASTER-NET_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
+  "PUPPETMASTER-NET_SHIELD.title": "Net Shield"
 }
