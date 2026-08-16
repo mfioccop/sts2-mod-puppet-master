@@ -57,5 +57,9 @@
   "PUPPETMASTER-ENCORE.description": "Your [gold]Puppets[/gold] last {EncorePower:diff()} additional {EncorePower:plural:turn|turns}.",
   "PUPPETMASTER-ENCORE.title": "Encore",
   "PUPPETMASTER-NET_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
-  "PUPPETMASTER-NET_SHIELD.title": "Net Shield"
+  "PUPPETMASTER-NET_SHIELD.title": "Net Shield",
+  "PUPPETMASTER-BREAK_A_LEG.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "PUPPETMASTER-BREAK_A_LEG.title": "Break a Leg",
+  "PUPPETMASTER-EMBELLISH.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Gain {Block:diff()} [gold]Block[/gold].",
+  "PUPPETMASTER-EMBELLISH.title": "Embellish"
 }
