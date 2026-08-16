@@ -1,4 +1,6 @@
 {
   "PUPPETMASTER-POTION_PUPPET.description": "Add a random Common, Uncommon, and Rare [gold]Puppet[/gold] into your [gold]Hand[/gold]. They are free to play this turn.",
-  "PUPPETMASTER-POTION_PUPPET.title": "Potion Puppet"
+  "PUPPETMASTER-POTION_PUPPET.title": "Potion Puppet",
+  "PUPPETMASTER-BOTTLED_THREAD.description": "Apply {ThreadPower:diff()} [gold]Thread[/gold] to ALL enemies.",
+  "PUPPETMASTER-BOTTLED_THREAD.title": "Bottled Thread"
 }
