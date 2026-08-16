@@ -14,6 +14,8 @@ public class PuppetMaster : PlaceholderCharacterModel
 {
     public const string CharacterId = "PuppetMaster";
 
+    public override string PlaceholderID => "defect";
+
     public static readonly Color Color = new("ffffff");
 
     public override Color NameColor => Color;
