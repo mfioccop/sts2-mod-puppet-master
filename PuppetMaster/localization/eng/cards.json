@@ -72,5 +72,7 @@
   "PUPPETMASTER-LEFTOVERS.title": "Leftovers",
   "PUPPETMASTER-FINAL_TOUCHES.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Restring[/gold] {Restring:diff()}: Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
   "PUPPETMASTER-FINAL_TOUCHES.selectionScreenPrompt": "Choose a card to put back in your Hand.",
-  "PUPPETMASTER-FINAL_TOUCHES.title": "Final Touches"
+  "PUPPETMASTER-FINAL_TOUCHES.title": "Final Touches",
+  "PUPPETMASTER-WHITTLE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "PUPPETMASTER-WHITTLE.title": "Whittle"
 }
