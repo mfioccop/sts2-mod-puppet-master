@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Relics;
 
 namespace PuppetMaster.PuppetMasterCode.Powers;
@@ -39,10 +40,12 @@ public abstract class PuppetPower : PuppetMasterPower, IHasSecondAmount
     public async Task Perform(PlayerChoiceContext choiceContext)
     {
         await DoPerform(choiceContext);
+        await PuppetHooks.AfterPuppetPerformed(Owner.CombatState, choiceContext, this);
         if (Owner.Player?.TryGetRelic<ClockworkUnderstudy>(out var relic) ?? false)
         {
             relic.Flash();
             await DoPerform(choiceContext);
+            await PuppetHooks.AfterPuppetPerformed(Owner.CombatState, choiceContext, this);
         }
     }
 
