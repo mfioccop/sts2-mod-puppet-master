@@ -82,5 +82,7 @@
   "PUPPETMASTER-TEMPLATES.description": "At the start of your turn, draw {TemplatesPower:diff()} {TemplatesPower:plural:card|cards} if any enemy has [gold]Thread[/gold].",
   "PUPPETMASTER-TEMPLATES.title": "Templates",
   "PUPPETMASTER-THREAD_SEEKER.description": "Deal {Damage:diff()} damage to ALL enemies with [gold]Thread[/gold].",
-  "PUPPETMASTER-THREAD_SEEKER.title": "Thread Seeker"
+  "PUPPETMASTER-THREAD_SEEKER.title": "Thread Seeker",
+  "PUPPETMASTER-WIRE_TAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf enemy has [gold]Thread[/gold], gain {Block:diff()} next turn.",
+  "PUPPETMASTER-WIRE_TAP.title": "Wire Tap"
 }
