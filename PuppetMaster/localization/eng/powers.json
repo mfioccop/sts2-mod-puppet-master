@@ -43,5 +43,8 @@
   "PUPPETMASTER-TAKE_A_BOW_POWER.title": "Take a Bow",
   "PUPPETMASTER-TEMPLATES_POWER.description": "At the start of your turn, draw [blue]1[/blue] card if any enemy has [gold]Thread[/gold].",
   "PUPPETMASTER-TEMPLATES_POWER.smartDescription": "At the start of your turn, draw {Amount} {Amount:plural:card|cards} if any enemy has [gold]Thread[/gold].",
-  "PUPPETMASTER-TEMPLATES_POWER.title": "Templates"
+  "PUPPETMASTER-TEMPLATES_POWER.title": "Templates",
+  "PUPPETMASTER-ASSEMBLY_LINE_POWER.description": "Whenever you [gold]Restring[/gold], [blue]1[/blue] random card in your Hand is free to play this turn.",
+  "PUPPETMASTER-ASSEMBLY_LINE_POWER.smartDescription": "Whenever you [gold]Restring[/gold], {Amount} random {Amount:plural:card|cards} in your Hand {Amount:plural:is|are} free to play this turn.",
+  "PUPPETMASTER-ASSEMBLY_LINE_POWER.title": "Assembly Line"
 }

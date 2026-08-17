@@ -86,5 +86,7 @@
   "PUPPETMASTER-WIRE_TAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf enemy has [gold]Thread[/gold], gain {Block:diff()} next turn.",
   "PUPPETMASTER-WIRE_TAP.title": "Wire Tap",
   "PUPPETMASTER-SHARPEN_TOOLS.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
-  "PUPPETMASTER-SHARPEN_TOOLS.title": "Sharpen Tools"
+  "PUPPETMASTER-SHARPEN_TOOLS.title": "Sharpen Tools",
+  "PUPPETMASTER-ASSEMBLY_LINE.description": "Whenever you [gold]Restring[/gold], {AssemblyLinePower} random {AssemblyLinePower:plural:card|cards} in your Hand {AssemblyLinePower:plural:is|are} free to play this turn.",
+  "PUPPETMASTER-ASSEMBLY_LINE.title": "Assembly Line"
 }
