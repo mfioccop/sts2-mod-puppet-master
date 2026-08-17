@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon.Skills;
@@ -19,9 +20,11 @@ public class Resupply() : PuppetMasterCard(0, CardType.Skill, CardRarity.Uncommo
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
-        if (await TryRestring(choiceContext, play.Target) > 0)
+        var restringAmount = await TryRestring(choiceContext, play.Target);
+        if (restringAmount > 0)
         {
             await PlayerCmd.GainEnergy(DynamicVars["ExtraEnergy"].BaseValue, Owner);
+            await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
         }
     }
 }

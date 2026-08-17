@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Ancient.Attacks;
@@ -36,10 +37,12 @@ public class TwistedStrings() : PuppetMasterCard(0, CardType.Attack, CardRarity.
 
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
 
-        if (await TryRestring(choiceContext, play.Target) > 0)
+        var restringAmount = await TryRestring(choiceContext, play.Target);
+        if (restringAmount > 0)
         {
             await CommonActions.Apply<StrengthPower>(choiceContext, play.Target, this, -DynamicVars.Strength.BaseValue);
             await CommonActions.Apply<DexterityPower>(choiceContext, play.Target, this, -DynamicVars.Dexterity.BaseValue);
+            await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
         }
     }
 }

@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon.Attacks;
@@ -21,9 +22,11 @@ public class BreakALeg() : PuppetMasterCard(1, CardType.Attack, CardRarity.Uncom
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        if (await TryRestring(choiceContext, play.Target) > 0)
+        var restringAmount = await TryRestring(choiceContext, play.Target);
+        if (restringAmount > 0)
         {
             await CommonActions.Apply<VulnerablePower>(choiceContext, this, play);
+            await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
         }
     }
 }

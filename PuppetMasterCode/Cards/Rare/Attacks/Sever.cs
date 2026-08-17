@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Rare.Attacks;
@@ -32,9 +33,11 @@ public class Sever() : PuppetMasterCard(2, CardType.Attack, CardRarity.Rare, Tar
         }
 
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        if (await TryRestring(choiceContext, play.Target) > 0)
+        var restringAmount = await TryRestring(choiceContext, play.Target);
+        if (restringAmount > 0)
         {
             await CreatureCmd.Stun(play.Target);
+            await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
         }
     }
 }

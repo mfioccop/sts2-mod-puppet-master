@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Common.Attacks;
@@ -23,9 +24,11 @@ public class Clothesline() : PuppetMasterCard(1, CardType.Attack, CardRarity.Com
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         foreach (var target in this.GetTargets())
         {
-            if (await TryRestring(choiceContext, target) > 0)
+            var restringAmount = await TryRestring(choiceContext, play.Target);
+            if (restringAmount > 0)
             {
                 await CommonActions.Apply<VulnerablePower>(choiceContext, target, this);
+                await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
             }
         }
     }

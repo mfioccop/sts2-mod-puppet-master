@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Vars;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Common.Skills;
@@ -20,13 +21,15 @@ public class FinalTouches() : PuppetMasterCard(1, CardType.Skill, CardRarity.Com
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         await CommonActions.CardBlock(this, play);
-        if (await TryRestring(choiceContext, play.Target) > 0)
+        var restringAmount = await TryRestring(choiceContext, play.Target);
+        if (restringAmount > 0)
         {
             var card = await CommonActions.SelectSingleCard(this, SelectionScreenPrompt, choiceContext, PileType.Discard);
             if (card != null)
             {
                 await CardPileCmd.Add(card, PileType.Hand);
             }
+            await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
         }
     }
 }

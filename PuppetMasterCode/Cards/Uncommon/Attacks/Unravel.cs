@@ -2,6 +2,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using PuppetMaster.PuppetMasterCode.Hooks;
 using PuppetMaster.PuppetMasterCode.Powers;
 using PuppetMaster.PuppetMasterCode.Vars;
 
@@ -23,7 +24,12 @@ public class Unravel() : PuppetMasterCard(1, CardType.Attack, CardRarity.Uncommo
         }
 
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
-        await TryRestring(choiceContext, play.Target);
+        var restringAmount = await TryRestring(choiceContext, play.Target);
+        if (restringAmount > 0)
+        {
+            await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
+        }
+
     }
 
     protected override void OnUpgrade()
