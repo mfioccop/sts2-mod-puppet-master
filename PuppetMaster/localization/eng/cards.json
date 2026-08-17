@@ -84,5 +84,7 @@
   "PUPPETMASTER-THREAD_SEEKER.description": "Deal {Damage:diff()} damage to ALL enemies with [gold]Thread[/gold].",
   "PUPPETMASTER-THREAD_SEEKER.title": "Thread Seeker",
   "PUPPETMASTER-WIRE_TAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf enemy has [gold]Thread[/gold], gain {Block:diff()} next turn.",
-  "PUPPETMASTER-WIRE_TAP.title": "Wire Tap"
+  "PUPPETMASTER-WIRE_TAP.title": "Wire Tap",
+  "PUPPETMASTER-SHARPEN_TOOLS.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
+  "PUPPETMASTER-SHARPEN_TOOLS.title": "Sharpen Tools"
 }
