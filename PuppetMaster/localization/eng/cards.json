@@ -88,5 +88,11 @@
   "PUPPETMASTER-SHARPEN_TOOLS.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "PUPPETMASTER-SHARPEN_TOOLS.title": "Sharpen Tools",
   "PUPPETMASTER-ASSEMBLY_LINE.description": "Whenever you [gold]Restring[/gold], {AssemblyLinePower} random {AssemblyLinePower:plural:card|cards} in your Hand {AssemblyLinePower:plural:is|are} free to play this turn.",
-  "PUPPETMASTER-ASSEMBLY_LINE.title": "Assembly Line"
+  "PUPPETMASTER-ASSEMBLY_LINE.title": "Assembly Line",
+  "PUPPETMASTER-SNAPPING_STRINGS.description": "The first time each turn you [gold]Restring[/gold], deal {SnappingStringsPower:diff()} damage to ALL enemies.",
+  "PUPPETMASTER-SNAPPING_STRINGS.title": "Snapping Strings",
+  "PUPPETMASTER-PREPARE_WORKSHOP.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold] and {VigorPower:diff()} [gold]Vigor[/gold].",
+  "PUPPETMASTER-PREPARE_WORKSHOP.title": "Prepare Workshop",
+  "PUPPETMASTER-CONSTRICTION.description": "At the start of your turn, apply {ConstrictionPower:diff()} [gold]Weak[/gold] to ALL enemies with at least 6 [gold]Thread[/gold].",
+  "PUPPETMASTER-CONSTRICTION.title": "Constriction"
 }

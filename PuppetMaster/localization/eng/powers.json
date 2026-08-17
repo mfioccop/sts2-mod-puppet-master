@@ -46,5 +46,11 @@
   "PUPPETMASTER-TEMPLATES_POWER.title": "Templates",
   "PUPPETMASTER-ASSEMBLY_LINE_POWER.description": "Whenever you [gold]Restring[/gold], [blue]1[/blue] random card in your Hand is free to play this turn.",
   "PUPPETMASTER-ASSEMBLY_LINE_POWER.smartDescription": "Whenever you [gold]Restring[/gold], {Amount} random {Amount:plural:card|cards} in your Hand {Amount:plural:is|are} free to play this turn.",
-  "PUPPETMASTER-ASSEMBLY_LINE_POWER.title": "Assembly Line"
+  "PUPPETMASTER-ASSEMBLY_LINE_POWER.title": "Assembly Line",
+  "PUPPETMASTER-SNAPPING_STRINGS_POWER.description": "The first time each turn you [gold]Restring[/gold], deal [blue]1[/blue] damage to ALL enemies.",
+  "PUPPETMASTER-SNAPPING_STRINGS_POWER.smartDescription": "The first time each turn you [gold]Restring[/gold], deal {Amount} damage to ALL enemies.",
+  "PUPPETMASTER-SNAPPING_STRINGS_POWER.title": "Snapping Strings",
+  "PUPPETMASTER-CONSTRICTION_POWER.description": "At the start of your turn, apply [blue]1[/blue] [gold]Weak[/gold] to ALL enemies with at least [blue]6[/blue] [gold]Thread[/gold].",
+  "PUPPETMASTER-CONSTRICTION_POWER.smartDescription": "At the start of your turn, apply {Amount} [gold]Weak[/gold] to ALL enemies with at least [blue]6[/blue] [gold]Thread[/gold].",
+  "PUPPETMASTER-CONSTRICTION_POWER.title": "Constriction"
 }
