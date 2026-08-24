@@ -24,11 +24,11 @@ public class Clothesline() : PuppetMasterCard(1, CardType.Attack, CardRarity.Com
         await CommonActions.CardAttack(this, play).Execute(choiceContext);
         foreach (var target in this.GetTargets())
         {
-            var restringAmount = await TryRestring(choiceContext, play.Target);
+            var restringAmount = await TryRestring(choiceContext, target);
             if (restringAmount > 0)
             {
                 await CommonActions.Apply<VulnerablePower>(choiceContext, target, this);
-                await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, play.Target, restringAmount, play);
+                await RestringHooks.AfterRestring(CombatState, choiceContext, Owner.Creature, target, restringAmount, play);
             }
         }
     }
