@@ -96,5 +96,7 @@
   "PUPPETMASTER-CONSTRICTION.description": "At the start of your turn, apply {ConstrictionPower:diff()} [gold]Weak[/gold] to ALL enemies with at least 6 [gold]Thread[/gold].",
   "PUPPETMASTER-CONSTRICTION.title": "Constriction",
   "PUPPETMASTER-ANCIENT_SCHEMATICS.description": "Every {energyPrefix:energyIcons(4)} you spend, draw {AncientSchematicsPower:diff()} {AncientSchematicsPower:plural:card|cards}. {AncientSchematicsPower:plural:It's|They are} free to play this turn.",
-  "PUPPETMASTER-ANCIENT_SCHEMATICS.title": "Ancient Schematics"
+  "PUPPETMASTER-ANCIENT_SCHEMATICS.title": "Ancient Schematics",
+  "PUPPETMASTER-PULL_LINE.description": "Apply {ThreadPower:diff()} [gold]Thread[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "PUPPETMASTER-PULL_LINE.title": "Pull Line"
 }
