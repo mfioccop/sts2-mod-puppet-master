@@ -8,11 +8,11 @@ using PuppetMaster.PuppetMasterCode.Extensions;
 
 namespace PuppetMaster.PuppetMasterCode.Cards.Uncommon.Attacks;
 
-public class Rehearsal() : PuppetMasterCard(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+public class Rehearsal() : PuppetMasterCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(14, ValueProp.Move).WithUpgrade(4)
+        new DamageVar(9, ValueProp.Move).WithUpgrade(3)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
