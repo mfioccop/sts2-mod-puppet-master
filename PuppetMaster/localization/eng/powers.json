@@ -52,5 +52,8 @@
   "PUPPETMASTER-SNAPPING_STRINGS_POWER.title": "Snapping Strings",
   "PUPPETMASTER-CONSTRICTION_POWER.description": "At the start of your turn, apply [blue]1[/blue] [gold]Weak[/gold] to ALL enemies with at least [blue]6[/blue] [gold]Thread[/gold].",
   "PUPPETMASTER-CONSTRICTION_POWER.smartDescription": "At the start of your turn, apply {Amount} [gold]Weak[/gold] to ALL enemies with at least [blue]6[/blue] [gold]Thread[/gold].",
-  "PUPPETMASTER-CONSTRICTION_POWER.title": "Constriction"
+  "PUPPETMASTER-CONSTRICTION_POWER.title": "Constriction",
+  "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.description": "Every [blue]4[/blue] Energy you spend, draw [blue]1[/blue] card. It's free to play this turn.",
+  "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.smartDescription": "Every {Energy:energyIcons()} you spend, draw {Amount} {Amount:plural:card|cards}. {Amount:plural:It's|They are} free to play this turn.",
+  "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.title": "Ancient Schematics"
 }

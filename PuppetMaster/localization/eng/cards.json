@@ -94,5 +94,7 @@
   "PUPPETMASTER-PREPARE_WORKSHOP.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold] and {VigorPower:diff()} [gold]Vigor[/gold].",
   "PUPPETMASTER-PREPARE_WORKSHOP.title": "Prepare Workshop",
   "PUPPETMASTER-CONSTRICTION.description": "At the start of your turn, apply {ConstrictionPower:diff()} [gold]Weak[/gold] to ALL enemies with at least 6 [gold]Thread[/gold].",
-  "PUPPETMASTER-CONSTRICTION.title": "Constriction"
+  "PUPPETMASTER-CONSTRICTION.title": "Constriction",
+  "PUPPETMASTER-ANCIENT_SCHEMATICS.description": "Every {energyPrefix:energyIcons(4)} you spend, draw {AncientSchematicsPower:diff()} {AncientSchematicsPower:plural:card|cards}. {AncientSchematicsPower:plural:It's|They are} free to play this turn.",
+  "PUPPETMASTER-ANCIENT_SCHEMATICS.title": "Ancient Schematics"
 }
