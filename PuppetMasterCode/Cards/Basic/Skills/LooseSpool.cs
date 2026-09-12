@@ -12,7 +12,7 @@ public class LooseSpool() : PuppetMasterCard(0, CardType.Skill, CardRarity.Basic
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<ThreadPower>(1).WithUpgrade(1)
+        new PowerVar<ThreadPower>(1).WithUpgrade(3)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>

@@ -28,8 +28,6 @@ public class PuppetMaster : PlaceholderCharacterModel
         ModelDb.Card<StrikePuppetMaster>(),
         ModelDb.Card<StrikePuppetMaster>(),
         ModelDb.Card<StrikePuppetMaster>(),
-        ModelDb.Card<StrikePuppetMaster>(),
-        ModelDb.Card<DefendPuppetMaster>(),
         ModelDb.Card<DefendPuppetMaster>(),
         ModelDb.Card<DefendPuppetMaster>(),
         ModelDb.Card<DefendPuppetMaster>(),

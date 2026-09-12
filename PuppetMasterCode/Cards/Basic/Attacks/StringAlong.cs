@@ -18,8 +18,8 @@ public class StringAlong() : PuppetMasterCard(0, CardType.Attack, CardRarity.Bas
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(3, ValueProp.Move),
-        new RestringVar(3).WithUpgrade(-1),
+        new DamageVar(4, ValueProp.Move).WithUpgrade(2),
+        new RestringVar(2).WithUpgrade(-1),
         new PowerVar<StrengthPower>(1),
     ];
 

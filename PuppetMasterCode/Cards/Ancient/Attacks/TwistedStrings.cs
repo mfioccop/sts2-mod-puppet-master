@@ -15,7 +15,7 @@ public class TwistedStrings() : PuppetMasterCard(0, CardType.Attack, CardRarity.
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(9, ValueProp.Move),
+        new DamageVar(9, ValueProp.Move).WithUpgrade(3),
         new RestringVar(2).WithUpgrade(-1),
         new PowerVar<StrengthPower>(1),
         new PowerVar<DexterityPower>(1),
