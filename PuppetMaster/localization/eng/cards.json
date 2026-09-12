@@ -101,5 +101,9 @@
   "PUPPETMASTER-PULL_LINE.title": "Pull Line",
   "PUPPETMASTER-FAVORITE_TOOL.description": "Draw X cards.\nIf you drew any cards, choose a card in your hand. It's free to play this {IfUpgraded:show:combat|turn}.",
   "PUPPETMASTER-FAVORITE_TOOL.selectionScreenPrompt": "Choose a card.",
-  "PUPPETMASTER-FAVORITE_TOOL.title": "Favorite Tool"
+  "PUPPETMASTER-FAVORITE_TOOL.title": "Favorite Tool",
+  "PUPPETMASTER-TRACE.description": "Deal {Damage:diff()} damage.\nGain {VigorPower:diff()} [gold]Vigor[/gold] for each [gold]Thread[/gold] enemy has.",
+  "PUPPETMASTER-TRACE.title": "Trace",
+  "PUPPETMASTER-SNAPPING_STRIKE.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Deal {UnblockableDamage:diff()} unblockable damage to ALL enemies.",
+  "PUPPETMASTER-SNAPPING_STRIKE.title": "Snapping Strike"
 }
