@@ -98,5 +98,8 @@
   "PUPPETMASTER-ANCIENT_SCHEMATICS.description": "Every {energyPrefix:energyIcons(4)} you spend, draw {AncientSchematicsPower:diff()} {AncientSchematicsPower:plural:card|cards}. {AncientSchematicsPower:plural:It's|They are} free to play this turn.",
   "PUPPETMASTER-ANCIENT_SCHEMATICS.title": "Ancient Schematics",
   "PUPPETMASTER-PULL_LINE.description": "Apply {ThreadPower:diff()} [gold]Thread[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
-  "PUPPETMASTER-PULL_LINE.title": "Pull Line"
+  "PUPPETMASTER-PULL_LINE.title": "Pull Line",
+  "PUPPETMASTER-FAVORITE_TOOL.description": "Draw X cards.\nIf you drew any cards, choose a card in your hand. It's free to play this {IfUpgraded:show:combat|turn}.",
+  "PUPPETMASTER-FAVORITE_TOOL.selectionScreenPrompt": "Choose a card.",
+  "PUPPETMASTER-FAVORITE_TOOL.title": "Favorite Tool"
 }
