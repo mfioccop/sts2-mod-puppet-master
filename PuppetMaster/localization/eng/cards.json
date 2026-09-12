@@ -107,5 +107,7 @@
   "PUPPETMASTER-SNAPPING_STRIKE.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Deal {UnblockableDamage:diff()} unblockable damage to ALL enemies.",
   "PUPPETMASTER-SNAPPING_STRIKE.title": "Snapping Strike",
   "PUPPETMASTER-RELEASE_TENSION.description": "Enemy loses {StrengthLoss:diff()} [gold]Strength[/gold].\n[gold]Restring[/gold] all: Enemy loses 1 additional [gold]Strength[/gold] for every {ThreadPerStrength:diff()} [gold]Thread[/gold] consumed.",
-  "PUPPETMASTER-RELEASE_TENSION.title": "Release Tension"
+  "PUPPETMASTER-RELEASE_TENSION.title": "Release Tension",
+  "PUPPETMASTER-DUMP_SPOOLS.description": "Apply {ThreadPower:diff()} [gold]Thread[/gold], split evenly between ALL enemies.\nIf it cannot split evenly, gain {Energy:energyIcons()} instead of applying extra [gold]Thread[/gold].",
+  "PUPPETMASTER-DUMP_SPOOLS.title": "Dump Spools"
 }
