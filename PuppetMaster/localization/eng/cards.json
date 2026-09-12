@@ -105,5 +105,7 @@
   "PUPPETMASTER-TRACE.description": "Deal {Damage:diff()} damage.\nGain {VigorPower:diff()} [gold]Vigor[/gold] for each [gold]Thread[/gold] enemy has.",
   "PUPPETMASTER-TRACE.title": "Trace",
   "PUPPETMASTER-SNAPPING_STRIKE.description": "Deal {Damage:diff()} damage.\n[gold]Restring[/gold] {Restring:diff()}: Deal {UnblockableDamage:diff()} unblockable damage to ALL enemies.",
-  "PUPPETMASTER-SNAPPING_STRIKE.title": "Snapping Strike"
+  "PUPPETMASTER-SNAPPING_STRIKE.title": "Snapping Strike",
+  "PUPPETMASTER-RELEASE_TENSION.description": "Enemy loses {StrengthLoss:diff()} [gold]Strength[/gold].\n[gold]Restring[/gold] all: Enemy loses 1 additional [gold]Strength[/gold] for every {ThreadPerStrength:diff()} [gold]Thread[/gold] consumed.",
+  "PUPPETMASTER-RELEASE_TENSION.title": "Release Tension"
 }
