@@ -8,13 +8,26 @@ namespace PuppetMaster.PuppetMasterCode.Combat.Restring;
 
 public class RestringHistory
 {
-    public static RestringHistory Instance => new();
+    public static RestringHistory Instance
+    {
+        get
+        {
+            var history = new RestringHistory();
+            CombatManager.Instance.CombatSetUp += CombatSetUp;
+            return history;
+        }
+    }
 
     private static readonly ConditionalWeakTable<CombatHistory, RestringHistory> Restrings = [];
 
     private readonly List<RestringHistoryEntry> _entries = [];
 
     public event Action? Changed;
+
+    private static void CombatSetUp(CombatState combatState)
+    {
+        Restrings.GetOrCreateValue(CombatManager.Instance.History)._entries.Clear();
+    }
 
     public static IEnumerable<RestringHistoryEntry> Entries()
     {
