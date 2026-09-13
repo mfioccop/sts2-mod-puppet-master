@@ -7,25 +7,25 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 using PuppetMaster.PuppetMasterCode.Powers;
 
 namespace PuppetMaster.PuppetMasterCode.Relics;
 
-public class SpinningWheel : PuppetMasterRelic
+public class SteamPoweredWheel : PuppetMasterRelic
 {
-    public override RelicRarity Rarity => RelicRarity.Starter;
-
-    public override RelicModel GetUpgradeReplacement() => ModelDb.Relic<SteamPoweredWheel>();
+    public override RelicRarity Rarity => RelicRarity.Ancient;
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<ThreadPower>(1),
+        new PowerVar<ThreadPower>(2),
+        new PowerVar<VigorPower>(2),
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         ThreadPower.HoverTip,
+        HoverTipFactory.FromPower<VigorPower>(),
     ];
 
     private bool HasSpunThisTurn
@@ -59,5 +59,6 @@ public class SpinningWheel : PuppetMasterRelic
 
         HasSpunThisTurn = true;
         await PowerCmd.Apply<ThreadPower>(choiceContext, Owner.Creature.CombatState?.HittableEnemies, DynamicVars.Power<ThreadPower>().BaseValue, Owner.Creature, null);
+        await PowerCmd.Apply<VigorPower>(choiceContext, Owner.Creature, DynamicVars.Power<VigorPower>().BaseValue, Owner.Creature, null);
     }
 }

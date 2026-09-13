@@ -1,7 +1,10 @@
 {
-  "PUPPETMASTER-SPINNING_WHEEL.description": "The first time you play a card each turn, spin [blue]1[/blue] [gold]Thread[/gold] on ALL enemies.",
-  "PUPPETMASTER-SPINNING_WHEEL.flavor": "",
+  "PUPPETMASTER-SPINNING_WHEEL.description": "The first time you play a card each turn, spin [blue]{ThreadPower}[/blue] [gold]Thread[/gold] on ALL enemies.",
+  "PUPPETMASTER-SPINNING_WHEEL.flavor": "The wheel weaves as the wheel wills...",
   "PUPPETMASTER-SPINNING_WHEEL.title": "Spinning Wheel",
+  "PUPPETMASTER-STEAM_POWERED_WHEEL.description": "The first time you play a card each turn, spin [blue]{ThreadPower}[/blue] [gold]Thread[/gold] on ALL enemies and gain [blue]{VigorPower}[/blue] [gold]Vigor[/gold].",
+  "PUPPETMASTER-STEAM_POWERED_WHEEL.flavor": "...and it wills for a revolution of industry.",
+  "PUPPETMASTER-STEAM_POWERED_WHEEL.title": "Steam Powered Wheel",
   "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.description": "Whenever your [gold]Puppets Perform[/gold], they do so an additional time.",
   "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.flavor": "Still learning its lines, but has the moves down.",
   "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.title": "Clockwork Understudy",
