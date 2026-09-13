@@ -7,5 +7,14 @@
   "PUPPETMASTER-CLOCKWORK_UNDERSTUDY.title": "Clockwork Understudy",
   "PUPPETMASTER-BOX_OF_SCRAPS.description": "Every [blue]5th[/blue] [gold]Puppet[/gold] you play is free.",
   "PUPPETMASTER-BOX_OF_SCRAPS.flavor": "Holds everything you need to make a puppet. As long as you fill it first.",
-  "PUPPETMASTER-BOX_OF_SCRAPS.title": "Box of Scraps"
+  "PUPPETMASTER-BOX_OF_SCRAPS.title": "Box of Scraps",
+  "PUPPETMASTER-WIRE_CUTTERS.description": "Whenever you [gold]Restring[/gold], deal [blue]{Damage}[/blue] damage.",
+  "PUPPETMASTER-WIRE_CUTTERS.flavor": "Can be used for good, or for evil.",
+  "PUPPETMASTER-WIRE_CUTTERS.title": "Wire Cutters",
+  "PUPPETMASTER-AUTO_SPOOLER.description": "The first time you [gold]Restring[/gold] each turn, draw [blue]1[/blue] card.",
+  "PUPPETMASTER-AUTO_SPOOLER.flavor": "A strange contraption of springs and gears that usually cooperates.",
+  "PUPPETMASTER-AUTO_SPOOLER.title": "Auto-spooler",
+  "PUPPETMASTER-RECYCLED_CAPE.description": "Every [blue]{ApplicationsPerEnergy}[/blue] times you apply [gold]Thread[/gold], gain {Energy:energyIcons()}.",
+  "PUPPETMASTER-RECYCLED_CAPE.flavor": "It's got a few-- well, lots of holes in it. But it IS stylish!",
+  "PUPPETMASTER-RECYCLED_CAPE.title": "Recycled Cape"
 }
