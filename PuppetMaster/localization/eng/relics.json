@@ -19,5 +19,11 @@
   "PUPPETMASTER-AUTO_SPOOLER.title": "Auto-spooler",
   "PUPPETMASTER-RECYCLED_CAPE.description": "Every [blue]{ApplicationsPerEnergy}[/blue] times you apply [gold]Thread[/gold], gain {Energy:energyIcons()}.",
   "PUPPETMASTER-RECYCLED_CAPE.flavor": "It's got a few-- well, lots of holes in it. But it IS stylish!",
-  "PUPPETMASTER-RECYCLED_CAPE.title": "Recycled Cape"
+  "PUPPETMASTER-RECYCLED_CAPE.title": "Recycled Cape",
+  "PUPPETMASTER-TRIPWIRE_ALARM.description": "At the end of your turn, gain [blue]{Block}[/blue] [gold]Block[/gold] if any enemy has [gold]Thread[/gold].",
+  "PUPPETMASTER-TRIPWIRE_ALARM.flavor": "We might not see them coming, but we will hear them.",
+  "PUPPETMASTER-TRIPWIRE_ALARM.title": "Tripwire Alarm",
+  "PUPPETMASTER-PIN_CUSHION.description": "Whenever you attack, apply [blue]{ThreadPower}[/blue] [gold]Thread[/gold].",
+  "PUPPETMASTER-PIN_CUSHION.flavor": "Someone's got to be it. And it's NOT going to be me!",
+  "PUPPETMASTER-PIN_CUSHION.title": "Pin Cushion"
 }
