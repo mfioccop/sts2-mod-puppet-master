@@ -21,7 +21,7 @@ public class Leftovers() : PuppetMasterCard(0, CardType.Skill, CardRarity.Uncomm
             return;
         }
 
-        await PowerCmd.Apply<ThreadPower>(choiceContext, play.Target, DynamicVars["Thread"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<ThreadPower>(choiceContext, play.Target, ((CalculatedVar)DynamicVars["Thread"]).Calculate(play.Target), Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
