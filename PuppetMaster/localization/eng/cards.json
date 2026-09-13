@@ -116,5 +116,9 @@
   "PUPPETMASTER-THREADBARE.description": "At the end of your turn, apply {ThreadbarePower:diff()} [gold]Thread[/gold] to a random enemy without any.",
   "PUPPETMASTER-THREADBARE.title": "Threadbare",
   "PUPPETMASTER-REDUCE_REUSE_RECYCLE.description": "Whenever you [gold]Restring[/gold], apply {ReduceReuseRecyclePower:diff()} [gold]Thread[/gold].",
-  "PUPPETMASTER-REDUCE_REUSE_RECYCLE.title": "Reduce, Reuse, Recycle"
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE.title": "Reduce, Reuse, Recycle",
+  "PUPPETMASTER-QUICK_WRAP.description": "Deal {Damage:diff()} damage.\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
+  "PUPPETMASTER-QUICK_WRAP.title": "Quick Wrap",
+  "PUPPETMASTER-WRAP_UP.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time you [gold]Restrung[/gold] this combat.",
+  "PUPPETMASTER-WRAP_UP.title": "Wrap Up"
 }
