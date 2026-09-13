@@ -15,10 +15,10 @@ public class TwistedStrings() : PuppetMasterCard(0, CardType.Attack, CardRarity.
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(9, ValueProp.Move).WithUpgrade(3),
+        new DamageVar(10, ValueProp.Move).WithUpgrade(5),
         new RestringVar(2).WithUpgrade(-1),
-        new PowerVar<StrengthPower>(1),
-        new PowerVar<DexterityPower>(1),
+        new PowerVar<StrengthPower>(2),
+        new PowerVar<DexterityPower>(2),
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
