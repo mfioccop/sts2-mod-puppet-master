@@ -55,5 +55,11 @@
   "PUPPETMASTER-CONSTRICTION_POWER.title": "Constriction",
   "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.description": "Every [blue]4[/blue] Energy you spend, draw [blue]1[/blue] card. It's free to play this turn.",
   "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.smartDescription": "Every {Energy:energyIcons()} you spend, draw {Amount} {Amount:plural:card|cards}. {Amount:plural:It's|They are} free to play this turn.",
-  "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.title": "Ancient Schematics"
+  "PUPPETMASTER-ANCIENT_SCHEMATICS_POWER.title": "Ancient Schematics",
+  "PUPPETMASTER-THREADBARE_POWER.description": "At the end of your turn, apply [blue]1[/blue] [gold]Thread[/gold] to a random enemy without any.",
+  "PUPPETMASTER-THREADBARE_POWER.smartDescription": "At the end of your turn, apply {Amount} [gold]Thread[/gold] to a random enemy without any.",
+  "PUPPETMASTER-THREADBARE_POWER.title": "Threadbare",
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.description": "Whenever you [gold]Restring[/gold], apply [blue]1[/blue] [gold]Thread[/gold].",
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.smartDescription": "Whenever you [gold]Restring[/gold], apply {Amount} [gold]Thread[/gold].",
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.title": "Reduce, Reuse, Recycle"
 }

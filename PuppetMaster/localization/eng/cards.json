@@ -112,5 +112,9 @@
   "PUPPETMASTER-DUMP_SPOOLS.title": "Dump Spools",
   "PUPPETMASTER-PROTOTYPE.description": "Choose a [gold]Puppet[/gold] in your [gold]Hand[/gold]. It costs {Energy:energyIcons()} less this turn.",
   "PUPPETMASTER-PROTOTYPE.selectionScreenPrompt": "Choose a [gold]Puppet[/gold] to reduce the cost of this turn.",
-  "PUPPETMASTER-PROTOTYPE.title": "Prototype"
+  "PUPPETMASTER-PROTOTYPE.title": "Prototype",
+  "PUPPETMASTER-THREADBARE.description": "At the end of your turn, apply {ThreadbarePower:diff()} [gold]Thread[/gold] to a random enemy without any.",
+  "PUPPETMASTER-THREADBARE.title": "Threadbare",
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE.description": "Whenever you [gold]Restring[/gold], apply {ReduceReuseRecyclePower:diff()} [gold]Thread[/gold].",
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE.title": "Reduce, Reuse, Recycle"
 }
