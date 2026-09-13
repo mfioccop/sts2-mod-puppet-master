@@ -109,5 +109,8 @@
   "PUPPETMASTER-RELEASE_TENSION.description": "Enemy loses {StrengthLoss:diff()} [gold]Strength[/gold].\n[gold]Restring[/gold] all: Enemy loses 1 additional [gold]Strength[/gold] for every {ThreadPerStrength:diff()} [gold]Thread[/gold] consumed.",
   "PUPPETMASTER-RELEASE_TENSION.title": "Release Tension",
   "PUPPETMASTER-DUMP_SPOOLS.description": "Apply {ThreadPower:diff()} [gold]Thread[/gold], split evenly between ALL enemies.\nIf it cannot split evenly, gain {Energy:energyIcons()} instead of applying extra [gold]Thread[/gold].",
-  "PUPPETMASTER-DUMP_SPOOLS.title": "Dump Spools"
+  "PUPPETMASTER-DUMP_SPOOLS.title": "Dump Spools",
+  "PUPPETMASTER-PROTOTYPE.description": "Choose a [gold]Puppet[/gold] in your [gold]Hand[/gold]. It costs {Energy:energyIcons()} less this turn.",
+  "PUPPETMASTER-PROTOTYPE.selectionScreenPrompt": "Choose a [gold]Puppet[/gold] to reduce the cost of this turn.",
+  "PUPPETMASTER-PROTOTYPE.title": "Prototype"
 }
