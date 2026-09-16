@@ -124,5 +124,7 @@
   "PUPPETMASTER-PULL_TAUT.description": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage if enemy has [gold]Thread[/gold].",
   "PUPPETMASTER-PULL_TAUT.title": "Pull Taut",
   "PUPPETMASTER-MAKE_EXAMPLE.description": "Deal {Damage:diff()} damage.\nApply {ThreadPower:diff()} [gold]Thread[/gold].",
-  "PUPPETMASTER-MAKE_EXAMPLE.title": "Make Example"
+  "PUPPETMASTER-MAKE_EXAMPLE.title": "Make Example",
+  "PUPPETMASTER-PRESHOW.description": "Whenever you play a [gold]Puppet[/gold], deal {PreshowPower:diff()} damage to a random enemy.",
+  "PUPPETMASTER-PRESHOW.title": "Pre-show"
 }

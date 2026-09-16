@@ -61,5 +61,8 @@
   "PUPPETMASTER-THREADBARE_POWER.title": "Threadbare",
   "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.description": "Whenever you [gold]Restring[/gold], apply [blue]1[/blue] [gold]Thread[/gold].",
   "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.smartDescription": "Whenever you [gold]Restring[/gold], apply {Amount} [gold]Thread[/gold].",
-  "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.title": "Reduce, Reuse, Recycle"
+  "PUPPETMASTER-REDUCE_REUSE_RECYCLE_POWER.title": "Reduce, Reuse, Recycle",
+  "PUPPETMASTER-PRESHOW_POWER.description": "Whenever you play a [gold]Puppet[/gold], deal [blue]1[/blue] damage to a random enemy.",
+  "PUPPETMASTER-PRESHOW_POWER.smartDescription": "Whenever you play a [gold]Puppet[/gold], deal [blue]{Amount}[/blue] damage to a random enemy.",
+  "PUPPETMASTER-PRESHOW_POWER.title": "Pre-show"
 }
